@@ -1,69 +1,45 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learning Mandarin</title>
-  <meta name="description" content="最先進的繁體中文學習平台，結合AI技術與語言學研究成果，幫助您高效掌握繁體中文">
-  <meta name="keywords" content="繁體中文,中文學習,HSK,台灣中文,語言學習,AI學習">
-  <meta name="author" content="Learning Mandarin">
+  <title>Luyện Thi TOCFL - Học Tiếng Trung Cho Người Việt</title>
+  <meta name="description" content="Hệ thống luyện thi TOCFL hiệu quả nhất cho người Việt, kết hợp công nghệ AI và phương pháp học thông minh">
+  <meta name="keywords" content="TOCFL, học tiếng Trung, luyện thi TOCFL, tiếng Trung cho người Việt, HSK, tiếng Hoa">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://traditional-chinese-master.com/">
-  <meta property="og:title" content="繁體中文大師 - 全方位語言學習平台">
-  <meta property="og:description" content="最先進的繁體中文學習平台，結合AI技術與語言學研究成果，幫助您高效掌握繁體中文">
-  <meta property="og:image" content="https://traditional-chinese-master.com/images/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://traditional-chinese-master.com/">
-  <meta property="twitter:title" content="繁體中文大師 - 全方位語言學習平台">
-  <meta property="twitter:description" content="最先進的繁體中文學習平台，結合AI技術與語言學研究成果，幫助您高效掌握繁體中文">
-  <meta property="twitter:image" content="https://traditional-chinese-master.com/images/og-image.jpg">
+  <meta property="og:url" content="https://tocfl.vn/">
+  <meta property="og:title" content="Luyện Thi TOCFL - Học Tiếng Trung Cho Người Việt">
+  <meta property="og:description" content="Hệ thống luyện thi TOCFL hiệu quả nhất cho người Việt, kết hợp công nghệ AI và phương pháp học thông minh">
+  <meta property="og:image" content="https://tocfl.vn/images/og-image.jpg">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e7d32">
-  <meta name="msapplication-TileColor" content="#2e7d32">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- CSS Libraries -->
+  
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.css">
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --primary-color: #2e7d32;
       --primary-light: #4caf50;
       --primary-dark: #1b5e20;
-      --secondary-color: #ff9800;
-      --secondary-light: #ffb74d;
-      --secondary-dark: #f57c00;
+      --secondary-color: #f57c00;
+      --secondary-light: #ff9800;
+      --secondary-dark: #e65100;
       --accent-color: #8bc34a;
-      --light-color: #f1f8e9;
-      --dark-color: #1e3a1e;
-      --text-color: #263238;
-      --text-light: #607d8b;
-      --text-lighter: #90a4ae;
-      --border-color: #c8e6c9;
-      --border-light: #e8f5e9;
-      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
-      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-      --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
-      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      --transition-fast: all 0.15s ease;
-      --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-      --gradient-secondary: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
-      --gradient-accent: linear-gradient(135deg, var(--accent-color), var(--primary-light));
+      --text-color: #212121;
+      --text-light: #757575;
+      --text-lighter: #9e9e9e;
+      --border-color: #e0e0e0;
+      --light-bg: #f5f5f5;
+      --white: #ffffff;
       --success-color: #689f38;
       --info-color: #0288d1;
       --warning-color: #ffa000;
@@ -71,8 +47,10 @@
       --radius-sm: 4px;
       --radius-md: 8px;
       --radius-lg: 12px;
-      --radius-xl: 16px;
-      --radius-full: 9999px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
+      --transition: all 0.3s ease;
     }
 
     * {
@@ -82,61 +60,17 @@
     }
 
     body {
-      font-family: 'Noto Sans TC', 'Microsoft JhengHei', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.7;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      line-height: 1.6;
       color: var(--text-color);
-      background-color: #f9f9f9;
+      background-color: var(--light-bg);
       overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
     }
 
-    /* 骨架屏載入動畫 */
-    @keyframes skeletonLoading {
-      0% { background-position: 100% 50%; }
-      100% { background-position: 0 50%; }
-    }
-
-    .skeleton {
-      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-      background-size: 400% 100%;
-      animation: skeletonLoading 1.5s ease infinite;
-      border-radius: var(--radius-sm);
-      color: transparent;
-    }
-
-    /* 增強骨架屏 */
-    .skeleton-enhanced {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .skeleton-enhanced::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(90deg, 
-                rgba(255,255,255,0) 0%, 
-                rgba(255,255,255,0.8) 50%, 
-                rgba(255,255,255,0) 100%);
-      animation: shimmer 1.5s infinite;
-    }
-
-    @keyframes shimmer {
-      0% { transform: translateX(-100%); }
-      100% { transform: translateX(100%); }
-    }
-
-    /* 基礎排版 */
     h1, h2, h3, h4, h5, h6 {
       font-weight: 700;
       line-height: 1.3;
       margin-bottom: 1rem;
-      color: var(--dark-color);
     }
 
     h1 { font-size: 2.5rem; }
@@ -154,18 +88,16 @@
     a {
       color: var(--primary-color);
       text-decoration: none;
-      transition: var(--transition-fast);
+      transition: var(--transition);
     }
 
     a:hover {
       color: var(--primary-dark);
-      text-decoration: underline;
     }
 
     img {
       max-width: 100%;
       height: auto;
-      vertical-align: middle;
     }
 
     ul, ol {
@@ -173,52 +105,34 @@
       padding-left: 1.5rem;
     }
 
-    hr {
-      border: 0;
-      height: 1px;
-      background-color: var(--border-light);
-      margin: 1.5rem 0;
-    }
-
-    /* 容器與佈局 */
     .container {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    .container-fluid {
-      width: 100%;
-      padding: 0 1rem;
+      padding: 0 15px;
     }
 
     .section {
-      padding: 5rem 0;
-      position: relative;
+      padding: 80px 0;
     }
 
     .section-sm {
-      padding: 3rem 0;
+      padding: 50px 0;
     }
 
     .section-lg {
-      padding: 7rem 0;
-    }
-
-    .section-xl {
-      padding: 9rem 0;
+      padding: 100px 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 50px;
     }
 
     .section-title h2 {
-      display: inline-block;
       position: relative;
-      padding-bottom: 1rem;
+      display: inline-block;
+      padding-bottom: 15px;
     }
 
     .section-title h2::after {
@@ -229,14 +143,8 @@
       transform: translateX(-50%);
       width: 80px;
       height: 4px;
-      background: var(--gradient-primary);
+      background: var(--primary-color);
       border-radius: 2px;
-    }
-
-    .section-title p {
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .text-center { text-align: center; }
@@ -244,161 +152,40 @@
     .text-right { text-align: right; }
     .text-primary { color: var(--primary-color); }
     .text-secondary { color: var(--secondary-color); }
-    .text-accent { color: var(--accent-color); }
     .text-light { color: var(--text-light); }
-    .text-lighter { color: var(--text-lighter); }
-    .text-dark { color: var(--dark-color); }
-    .text-success { color: var(--success-color); }
-    .text-info { color: var(--info-color); }
-    .text-warning { color: var(--warning-color); }
-    .text-danger { color: var(--danger-color); }
+    .text-white { color: var(--white); }
 
     .bg-primary { background-color: var(--primary-color); }
     .bg-secondary { background-color: var(--secondary-color); }
-    .bg-accent { background-color: var(--accent-color); }
-    .bg-light { background-color: var(--light-color); }
-    .bg-dark { background-color: var(--dark-color); }
-    .bg-white { background-color: #fff; }
-    .bg-success { background-color: var(--success-color); }
-    .bg-info { background-color: var(--info-color); }
-    .bg-warning { background-color: var(--warning-color); }
-    .bg-danger { background-color: var(--danger-color); }
+    .bg-light { background-color: var(--light-bg); }
+    .bg-white { background-color: var(--white); }
 
-    /* 網格系統 */
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -1rem;
-    }
-
-    .col {
-      flex: 1;
-      padding: 0 1rem;
-      min-width: 0;
-    }
-
-    .col-1 { flex: 0 0 8.333%; max-width: 8.333%; }
-    .col-2 { flex: 0 0 16.666%; max-width: 16.666%; }
-    .col-3 { flex: 0 0 25%; max-width: 25%; }
-    .col-4 { flex: 0 0 33.333%; max-width: 33.333%; }
-    .col-5 { flex: 0 0 41.666%; max-width: 41.666%; }
-    .col-6 { flex: 0 0 50%; max-width: 50%; }
-    .col-7 { flex: 0 0 58.333%; max-width: 58.333%; }
-    .col-8 { flex: 0 0 66.666%; max-width: 66.666%; }
-    .col-9 { flex: 0 0 75%; max-width: 75%; }
-    .col-10 { flex: 0 0 83.333%; max-width: 83.333%; }
-    .col-11 { flex: 0 0 91.666%; max-width: 91.666%; }
-    .col-12 { flex: 0 0 100%; max-width: 100%; }
-
-    /* 間距工具 */
-    .mt-0 { margin-top: 0; }
-    .mt-1 { margin-top: 0.25rem; }
-    .mt-2 { margin-top: 0.5rem; }
-    .mt-3 { margin-top: 1rem; }
-    .mt-4 { margin-top: 1.5rem; }
-    .mt-5 { margin-top: 3rem; }
-    .mb-0 { margin-bottom: 0; }
-    .mb-1 { margin-bottom: 0.25rem; }
-    .mb-2 { margin-bottom: 0.5rem; }
-    .mb-3 { margin-bottom: 1rem; }
-    .mb-4 { margin-bottom: 1.5rem; }
-    .mb-5 { margin-bottom: 3rem; }
-    .ml-0 { margin-left: 0; }
-    .ml-1 { margin-left: 0.25rem; }
-    .ml-2 { margin-left: 0.5rem; }
-    .ml-3 { margin-left: 1rem; }
-    .ml-4 { margin-left: 1.5rem; }
-    .ml-5 { margin-left: 3rem; }
-    .mr-0 { margin-right: 0; }
-    .mr-1 { margin-right: 0.25rem; }
-    .mr-2 { margin-right: 0.5rem; }
-    .mr-3 { margin-right: 1rem; }
-    .mr-4 { margin-right: 1.5rem; }
-    .mr-5 { margin-right: 3rem; }
-    .mx-auto { margin-left: auto; margin-right: auto; }
-    .my-auto { margin-top: auto; margin-bottom: auto; }
-
-    .pt-0 { padding-top: 0; }
-    .pt-1 { padding-top: 0.25rem; }
-    .pt-2 { padding-top: 0.5rem; }
-    .pt-3 { padding-top: 1rem; }
-    .pt-4 { padding-top: 1.5rem; }
-    .pt-5 { padding-top: 3rem; }
-    .pb-0 { padding-bottom: 0; }
-    .pb-1 { padding-bottom: 0.25rem; }
-    .pb-2 { padding-bottom: 0.5rem; }
-    .pb-3 { padding-bottom: 1rem; }
-    .pb-4 { padding-bottom: 1.5rem; }
-    .pb-5 { padding-bottom: 3rem; }
-    .pl-0 { padding-left: 0; }
-    .pl-1 { padding-left: 0.25rem; }
-    .pl-2 { padding-left: 0.5rem; }
-    .pl-3 { padding-left: 1rem; }
-    .pl-4 { padding-left: 1.5rem; }
-    .pl-5 { padding-left: 3rem; }
-    .pr-0 { padding-right: 0; }
-    .pr-1 { padding-right: 0.25rem; }
-    .pr-2 { padding-right: 0.5rem; }
-    .pr-3 { padding-right: 1rem; }
-    .pr-4 { padding-right: 1.5rem; }
-    .pr-5 { padding-right: 3rem; }
-
-    /* 按鈕樣式 */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-weight: 500;
+      font-weight: 600;
       text-align: center;
       white-space: nowrap;
       vertical-align: middle;
       user-select: none;
       border: 1px solid transparent;
-      padding: 0.5rem 1.25rem;
+      padding: 10px 20px;
       font-size: 1rem;
       line-height: 1.5;
       border-radius: var(--radius-md);
       transition: var(--transition);
       cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      transform: translateZ(0);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .btn:active {
-      transform: translateY(2px);
-    }
-
-    .btn::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateX(-100%);
-      transition: transform 0.6s ease;
-    }
-
-    .btn:hover::after {
-      transform: translateX(0);
     }
 
     .btn-sm {
-      padding: 0.25rem 0.75rem;
+      padding: 8px 16px;
       font-size: 0.875rem;
     }
 
     .btn-lg {
-      padding: 0.75rem 1.5rem;
+      padding: 12px 24px;
       font-size: 1.125rem;
-    }
-
-    .btn-xl {
-      padding: 1rem 2rem;
-      font-size: 1.25rem;
     }
 
     .btn-block {
@@ -407,100 +194,43 @@
     }
 
     .btn-primary {
-      color: white;
-      background: var(--gradient-primary);
-      border-color: var(--primary-dark);
+      color: var(--white);
+      background-color: var(--primary-color);
     }
 
     .btn-primary:hover {
-      background: var(--primary-dark);
-      color: white;
+      background-color: var(--primary-dark);
+      color: var(--white);
     }
 
     .btn-secondary {
-      color: white;
-      background: var(--gradient-secondary);
-      border-color: var(--secondary-dark);
+      color: var(--white);
+      background-color: var(--secondary-color);
     }
 
     .btn-secondary:hover {
-      background: var(--secondary-dark);
-      color: white;
-    }
-
-    .btn-accent {
-      color: white;
-      background: var(--gradient-accent);
-      border-color: var(--primary-light);
-    }
-
-    .btn-accent:hover {
-      background: var(--primary-light);
-      color: white;
+      background-color: var(--secondary-dark);
+      color: var(--white);
     }
 
     .btn-outline {
       color: var(--primary-color);
-      background: transparent;
+      background-color: transparent;
       border-color: var(--primary-color);
     }
 
     .btn-outline:hover {
-      color: white;
-      background: var(--primary-color);
+      color: var(--white);
+      background-color: var(--primary-color);
     }
 
-    .btn-light {
-      color: var(--text-color);
-      background: white;
-      border-color: var(--border-color);
-    }
-
-    .btn-light:hover {
-      background: var(--light-color);
-    }
-
-    .btn-link {
-      color: var(--primary-color);
-      background: transparent;
-      border: none;
-      box-shadow: none;
-    }
-
-    .btn-link:hover {
-      text-decoration: underline;
-      background: transparent;
-    }
-
-    .btn-group {
-      display: inline-flex;
-      vertical-align: middle;
-    }
-
-    .btn-group .btn {
-      position: relative;
-      flex: 1 1 auto;
-    }
-
-    .btn-group .btn:not(:first-child) {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    .btn-group .btn:not(:last-child) {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    /* 卡片樣式 */
     .card {
       position: relative;
       display: flex;
       flex-direction: column;
       min-width: 0;
       word-wrap: break-word;
-      background-color: white;
+      background-color: var(--white);
       background-clip: border-box;
       border: 1px solid var(--border-color);
       border-radius: var(--radius-md);
@@ -515,534 +245,48 @@
 
     .card-body {
       flex: 1 1 auto;
-      padding: 1.5rem;
+      padding: 20px;
     }
 
     .card-title {
-      margin-bottom: 1rem;
+      margin-bottom: 15px;
     }
 
-    .card-subtitle {
-      margin-top: -0.5rem;
-      margin-bottom: 1rem;
-      color: var(--text-light);
-    }
-
-    .card-text:last-child {
-      margin-bottom: 0;
-    }
-
-    .card-link:hover {
-      text-decoration: none;
-    }
-
-    .card-link + .card-link {
-      margin-left: 1.5rem;
-    }
-
-    .card-header {
-      padding: 1rem 1.5rem;
-      margin-bottom: 0;
-      background-color: rgba(0, 0, 0, 0.03);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .card-header:first-child {
-      border-radius: calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px) 0 0;
-    }
-
-    .card-footer {
-      padding: 1rem 1.5rem;
-      background-color: rgba(0, 0, 0, 0.03);
-      border-top: 1px solid var(--border-color);
-    }
-
-    .card-footer:last-child {
-      border-radius: 0 0 calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px);
-    }
-
-    /* 3D卡片效果 */
-    .card-3d {
-      transform-style: preserve-3d;
-      perspective: 1000px;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-    }
-
-    .card-3d:hover {
-      transform: translateY(-10px) rotateX(5deg);
-      box-shadow: var(--shadow-lg);
-    }
-
-    /* 3D翻轉卡片 */
-    .flip-card {
-      perspective: 1000px;
-      height: 300px;
-    }
-
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-    }
-
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: var(--radius-md);
+    .progress-bar {
+      height: 8px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
       overflow: hidden;
-      box-shadow: var(--shadow-md);
     }
 
-    .flip-card-back {
-      background: white;
-      transform: rotateY(180deg);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .progress {
+      height: 100%;
+      background-color: var(--primary-color);
+      transition: width 0.6s ease;
     }
 
-    /* 表單元素 */
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .form-label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-    }
-
-    .form-control {
-      display: block;
-      width: 100%;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      line-height: 1.5;
-      color: var(--text-color);
-      background-color: white;
-      background-clip: padding-box;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
-      transition: var(--transition);
-    }
-
-    .form-control:focus {
-      color: var(--text-color);
-      background-color: white;
-      border-color: var(--primary-color);
-      outline: 0;
-      box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
-    }
-
-    .form-control::placeholder {
-      color: var(--text-lighter);
-      opacity: 1;
-    }
-
-    .form-control:disabled,
-    .form-control[readonly] {
-      background-color: var(--light-color);
-      opacity: 1;
-    }
-
-    .form-control-sm {
-      height: calc(1.5em + 0.5rem + 2px);
-      padding: 0.25rem 0.5rem;
-      font-size: 0.875rem;
-      line-height: 1.5;
-      border-radius: var(--radius-sm);
-    }
-
-    .form-control-lg {
-      height: calc(1.5em + 1rem + 2px);
-      padding: 0.5rem 1rem;
-      font-size: 1.25rem;
-      line-height: 1.5;
-      border-radius: var(--radius-lg);
-    }
-
-    .form-text {
-      display: block;
-      margin-top: 0.25rem;
-      font-size: 0.875rem;
-      color: var(--text-light);
-    }
-
-    .form-check {
-      position: relative;
-      display: block;
-      padding-left: 1.25rem;
-    }
-
-    .form-check-input {
-      position: absolute;
-      margin-top: 0.3rem;
-      margin-left: -1.25rem;
-    }
-
-    .form-check-label {
-      margin-bottom: 0;
-    }
-
-    .form-check-inline {
-      display: inline-flex;
-      align-items: center;
-      padding-left: 0;
-      margin-right: 0.75rem;
-    }
-
-    .form-check-inline .form-check-input {
-      position: static;
-      margin-top: 0;
-      margin-right: 0.3125rem;
-      margin-left: 0;
-    }
-
-    .valid-feedback {
-      display: none;
-      width: 100%;
-      margin-top: 0.25rem;
-      font-size: 80%;
-      color: var(--success-color);
-    }
-
-    .valid-tooltip {
-      position: absolute;
-      top: 100%;
-      z-index: 5;
-      display: none;
-      max-width: 100%;
-      padding: 0.25rem 0.5rem;
-      margin-top: 0.1rem;
-      font-size: 0.875rem;
-      line-height: 1.5;
-      color: white;
-      background-color: rgba(40, 167, 69, 0.9);
-      border-radius: var(--radius-sm);
-    }
-
-    .was-validated .form-control:valid,
-    .form-control.is-valid {
-      border-color: var(--success-color);
-      padding-right: calc(1.5em + 0.75rem);
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-      background-repeat: no-repeat;
-      background-position: right calc(0.375em + 0.1875rem) center;
-      background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
-    }
-
-    .was-validated .form-control:valid:focus,
-    .form-control.is-valid:focus {
-      border-color: var(--success-color);
-      box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-    }
-
-    .was-validated .form-control:valid ~ .valid-feedback,
-    .was-validated .form-control:valid ~ .valid-tooltip,
-    .form-control.is-valid ~ .valid-feedback,
-    .form-control.is-valid ~ .valid-tooltip {
-      display: block;
-    }
-
-    .invalid-feedback {
-      display: none;
-      width: 100%;
-      margin-top: 0.25rem;
-      font-size: 80%;
-      color: var(--danger-color);
-    }
-
-    .invalid-tooltip {
-      position: absolute;
-      top: 100%;
-      z-index: 5;
-      display: none;
-      max-width: 100%;
-      padding: 0.25rem 0.5rem;
-      margin-top: 0.1rem;
-      font-size: 0.875rem;
-      line-height: 1.5;
-      color: white;
-      background-color: rgba(220, 53, 69, 0.9);
-      border-radius: var(--radius-sm);
-    }
-
-    .was-validated .form-control:invalid,
-    .form-control.is-invalid {
-      border-color: var(--danger-color);
-      padding-right: calc(1.5em + 0.75rem);
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3e");
-      background-repeat: no-repeat;
-      background-position: right calc(0.375em + 0.1875rem) center;
-      background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
-    }
-
-    .was-validated .form-control:invalid:focus,
-    .form-control.is-invalid:focus {
-      border-color: var(--danger-color);
-      box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-    }
-
-    .was-validated .form-control:invalid ~ .invalid-feedback,
-    .was-validated .form-control:invalid ~ .invalid-tooltip,
-    .form-control.is-invalid ~ .invalid-feedback,
-    .form-control.is-invalid ~ .invalid-tooltip {
-      display: block;
-    }
-
-    /* 增強表單元素 */
-    .form-control-enhanced {
-      border: 2px solid var(--border-color);
-      border-radius: var(--radius-md);
-      padding: 0.8rem 1rem;
-      font-size: 1rem;
-      transition: var(--transition);
-      width: 100%;
-      background: white;
-    }
-
-    .form-control-enhanced:focus {
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
-      outline: none;
-    }
-
-    /* 增強表格樣式 */
-    .table {
-      width: 100%;
-      margin-bottom: 1.5rem;
-      color: var(--text-color);
-      border-collapse: collapse;
-    }
-
-    .table th,
-    .table td {
-      padding: 0.75rem;
-      vertical-align: top;
-      border-top: 1px solid var(--border-color);
-    }
-
-    .table thead th {
-      vertical-align: bottom;
-      border-bottom: 2px solid var(--border-color);
-    }
-
-    .table tbody + tbody {
-      border-top: 2px solid var(--border-color);
-    }
-
-    .table-sm th,
-    .table-sm td {
-      padding: 0.3rem;
-    }
-
-    .table-bordered {
-      border: 1px solid var(--border-color);
-    }
-
-    .table-bordered th,
-    .table-bordered td {
-      border: 1px solid var(--border-color);
-    }
-
-    .table-bordered thead th,
-    .table-bordered thead td {
-      border-bottom-width: 2px;
-    }
-
-    .table-borderless th,
-    .table-borderless td,
-    .table-borderless thead th,
-    .table-borderless tbody + tbody {
-      border: 0;
-    }
-
-    .table-striped tbody tr:nth-of-type(odd) {
-      background-color: rgba(0, 0, 0, 0.02);
-    }
-
-    .table-hover tbody tr:hover {
-      color: var(--text-color);
-      background-color: rgba(0, 0, 0, 0.04);
-    }
-
-    .table-primary,
-    .table-primary > th,
-    .table-primary > td {
-      background-color: #c8e6c9;
-    }
-
-    .table-hover .table-primary:hover {
-      background-color: #b2dfb3;
-    }
-
-    .table-hover .table-primary:hover > td,
-    .table-hover .table-primary:hover > th {
-      background-color: #b2dfb3;
-    }
-
-    .enhanced-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      box-shadow: var(--shadow-md);
-    }
-
-    .enhanced-table th {
-      background: var(--gradient-primary);
-      color: white;
-      padding: 1rem;
-      text-align: left;
-    }
-
-    .enhanced-table td {
-      padding: 1rem;
-      background: white;
-      border-bottom: 1px solid var(--border-color);
-      transition: var(--transition);
-    }
-
-    .enhanced-table tr:hover td {
-      background: var(--light-color);
-    }
-
-    /* 導航欄 */
+    /* Navigation */
     .navbar {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.5rem 1rem;
-    }
-
-    .navbar-brand {
-      display: inline-block;
-      padding-top: 0.3125rem;
-      padding-bottom: 0.3125rem;
-      margin-right: 1rem;
-      font-size: 1.25rem;
-      line-height: inherit;
-      white-space: nowrap;
-    }
-
-    .navbar-nav {
-      display: flex;
-      flex-direction: column;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
-    }
-
-    .navbar-nav .nav-link {
-      padding-right: 0;
-      padding-left: 0;
-    }
-
-    .navbar-nav .dropdown-menu {
-      position: static;
-      float: none;
-    }
-
-    .navbar-text {
-      display: inline-block;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-
-    .navbar-collapse {
-      flex-basis: 100%;
-      flex-grow: 1;
-      align-items: center;
-    }
-
-    .navbar-toggler {
-      padding: 0.25rem 0.75rem;
-      font-size: 1.25rem;
-      line-height: 1;
-      background-color: transparent;
-      border: 1px solid transparent;
-      border-radius: var(--radius-md);
-    }
-
-    .navbar-toggler:hover,
-    .navbar-toggler:focus {
-      text-decoration: none;
-    }
-
-    .navbar-toggler-icon {
-      display: inline-block;
-      width: 1.5em;
-      height: 1.5em;
-      vertical-align: middle;
-      content: "";
-      background: no-repeat center center;
-      background-size: 100% 100%;
-    }
-
-    .navbar-expand {
-      flex-flow: row nowrap;
-      justify-content: flex-start;
-    }
-
-    .navbar-expand .navbar-nav {
-      flex-direction: row;
-    }
-
-    .navbar-expand .navbar-nav .dropdown-menu {
-      position: absolute;
-    }
-
-    .navbar-expand .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-    }
-
-    .navbar-expand .navbar-collapse {
-      display: flex !important;
-      flex-basis: auto;
-    }
-
-    .navbar-expand .navbar-toggler {
-      display: none;
-    }
-
-    /* 增強導航欄 */
-    .nav-enhanced {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 1000;
-      backdrop-filter: blur(10px);
-      background: rgba(46, 125, 50, 0.9);
+      background-color: rgba(46, 125, 50, 0.95);
       box-shadow: var(--shadow-sm);
       transition: var(--transition);
     }
 
-    .nav-enhanced.scrolled {
-      background: rgba(46, 125, 50, 0.98);
+    .navbar.scrolled {
+      background-color: rgba(46, 125, 50, 0.98);
       box-shadow: var(--shadow-md);
     }
 
-    .header-container {
+    .navbar-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem;
+      padding: 15px 0;
     }
 
     .logo {
@@ -1050,11 +294,11 @@
       align-items: center;
       font-size: 1.5rem;
       font-weight: 700;
-      color: white;
+      color: var(--white);
     }
 
     .logo i {
-      margin-right: 0.5rem;
+      margin-right: 10px;
       font-size: 1.75rem;
     }
 
@@ -1062,115 +306,56 @@
       display: none;
       background: none;
       border: none;
-      color: white;
+      color: var(--white);
       font-size: 1.5rem;
       cursor: pointer;
     }
 
-    nav ul {
+    .nav-menu {
       display: flex;
       list-style: none;
     }
 
-    nav ul li {
-      margin-left: 1.5rem;
+    .nav-item {
+      margin-left: 20px;
       position: relative;
     }
 
-    nav ul li a {
-      color: white;
+    .nav-link {
+      color: var(--white);
       font-weight: 500;
       display: flex;
       align-items: center;
-      padding: 0.5rem 0;
-      position: relative;
+      padding: 10px 0;
     }
 
-    nav ul li a i {
-      margin-right: 0.5rem;
+    .nav-link i {
+      margin-right: 8px;
     }
 
-    nav ul li a::after {
+    .nav-link::after {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       width: 0;
       height: 2px;
-      background: white;
+      background: var(--white);
       transition: var(--transition);
     }
 
-    nav ul li a:hover::after,
-    nav ul li a.active::after {
+    .nav-link:hover::after,
+    .nav-link.active::after {
       width: 100%;
     }
 
-    .user-dropdown {
-      position: relative;
-    }
-
-    .user-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .user-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .user-dropdown-menu {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 200px;
-      background: white;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-lg);
-      padding: 0.5rem 0;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(10px);
-      transition: var(--transition);
-      z-index: 100;
-    }
-
-    .user-dropdown:hover .user-dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .user-dropdown-menu a {
-      display: block;
-      padding: 0.5rem 1rem;
-      color: var(--text-color);
-      transition: var(--transition-fast);
-    }
-
-    .user-dropdown-menu a:hover {
-      background: var(--light-color);
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-
-    .user-dropdown-menu hr {
-      margin: 0.5rem 0;
-      border-color: var(--border-color);
-    }
-
-    /* 英雄區域 */
+    /* Hero Section */
     .hero {
       position: relative;
       min-height: 100vh;
       display: flex;
       align-items: center;
-      overflow: hidden;
+      background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);
       padding-top: 80px;
     }
 
@@ -1181,39 +366,40 @@
     }
 
     .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 1.5rem;
+      font-size: 3rem;
+      margin-bottom: 20px;
       line-height: 1.2;
     }
 
     .hero p {
       font-size: 1.25rem;
-      margin-bottom: 2rem;
+      margin-bottom: 30px;
+      color: var(--text-light);
     }
 
     .hero-buttons {
       display: flex;
-      gap: 1rem;
-      margin-bottom: 3rem;
+      gap: 15px;
+      margin-bottom: 40px;
     }
 
     .hero-stats {
       display: flex;
-      gap: 1rem;
+      gap: 15px;
     }
 
     .stat-card {
       display: flex;
       align-items: center;
       background: rgba(255, 255, 255, 0.9);
-      padding: 1rem;
+      padding: 15px;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-sm);
     }
 
     .stat-card i {
       font-size: 1.5rem;
-      margin-right: 1rem;
+      margin-right: 15px;
       color: var(--primary-color);
     }
 
@@ -1228,285 +414,60 @@
       color: var(--text-light);
     }
 
-    .globe-container {
-      position: absolute;
-      right: -100px;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-    }
-
-    /* 動畫漸變背景 */
-    .gradient-bg {
-      background: linear-gradient(-45deg, #f1f8e9, #e8f5e9, #c8e6c9, #a5d6a7);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* 霓虹燈效果 */
-    .neon-text {
-      text-shadow: 0 0 5px rgba(76, 175, 80, 0.5), 
-                   0 0 10px rgba(76, 175, 80, 0.3),
-                   0 0 15px rgba(76, 175, 80, 0.2);
-    }
-
-    /* 打字機效果 */
-    .typewriter {
-      overflow: hidden;
-      border-right: 3px solid var(--primary-color);
-      white-space: nowrap;
-      margin: 0 auto;
-      letter-spacing: 2px;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: var(--primary-color); }
-    }
-
-    /* 懸浮提示 */
-    .tooltip {
-      position: relative;
-    }
-
-    .tooltip::before {
-      content: attr(data-tooltip);
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--dark-color);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.8rem;
-      white-space: nowrap;
-      opacity: 0;
-      visibility: hidden;
-      transition: var(--transition);
-      z-index: 100;
-    }
-
-    .tooltip:hover::before {
-      opacity: 1;
-      visibility: visible;
-      bottom: calc(100% + 10px);
-    }
-
-    /* 呼吸燈效果 */
-    @keyframes breathing {
-      0% { opacity: 0.8; transform: scale(0.98); }
-      50% { opacity: 1; transform: scale(1); }
-      100% { opacity: 0.8; transform: scale(0.98); }
-    }
-
-    .breathing-effect {
-      animation: breathing 3s ease-in-out infinite;
-    }
-
-    /* 增強音頻播放器 */
-    .audio-player {
-      background: white;
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      box-shadow: var(--shadow-md);
-      transition: var(--transition);
-    }
-
-    .audio-player:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .player-controls {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-
-    .play-btn {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: var(--gradient-primary);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 1rem;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-
-    .play-btn:hover {
-      transform: scale(1.05);
-    }
-
-    .play-btn i {
-      font-size: 1.25rem;
-    }
-
-    .player-info {
-      flex: 1;
-    }
-
-    .player-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
-
-    .player-subtitle {
-      font-size: 0.875rem;
-      color: var(--text-light);
-    }
-
-    .progress-container {
-      margin-top: 1rem;
-    }
-
-    .progress-bar {
-      height: 6px;
-      background: var(--light-color);
-      border-radius: 3px;
-      margin-bottom: 0.5rem;
-      overflow: hidden;
-    }
-
-    .progress {
+    /* Features Section */
+    .feature-card {
       height: 100%;
-      width: 0;
-      background: var(--gradient-primary);
-      transition: width 0.1s linear;
-    }
-
-    .time-display {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      color: var(--text-light);
-    }
-
-    .player-actions {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 1rem;
-    }
-
-    .action-btn {
-      background: none;
-      border: none;
-      color: var(--text-light);
-      cursor: pointer;
-      transition: var(--transition-fast);
-    }
-
-    .action-btn:hover {
-      color: var(--primary-color);
-    }
-
-    .play-btn-large {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.9);
-      color: var(--primary-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      cursor: pointer;
-      transition: var(--transition);
-      border: none;
-    }
-
-    .play-btn-large:hover {
-      transform: translate(-50%, -50%) scale(1.1);
-      background: white;
-    }
-
-    .play-btn-large i {
-      font-size: 1.5rem;
-    }
-
-    .waveform {
-      height: 100px;
-      width: 100%;
-      background: linear-gradient(90deg, var(--light-color) 0%, var(--accent-color) 50%, var(--light-color) 100%);
-      background-size: 200% 100%;
-      animation: waveformAnimation 2s linear infinite;
+      text-align: center;
+      padding: 30px 20px;
       border-radius: var(--radius-md);
-      margin-bottom: 1rem;
+      transition: var(--transition);
     }
 
-    @keyframes waveformAnimation {
-      0% { background-position: 100% 50%; }
-      100% { background-position: 0 50%; }
-    }
-
-    /* 增強進度條 */
-    .progress-bar-enhanced {
-      height: 10px;
-      border-radius: 5px;
-      background-color: #e0e0e0;
-      overflow: hidden;
-    }
-
-    .progress-bar-fill {
-      height: 100%;
-      background: var(--gradient-primary);
-      transition: width 0.5s ease;
-    }
-
-    /* 增強標籤 */
-    .tag {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      font-size: 0.75rem;
-      font-weight: 600;
-      border-radius: var(--radius-full);
-      background: var(--light-color);
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      background-color: rgba(76, 175, 80, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
       color: var(--primary-color);
     }
 
-    .tag-enhanced {
+    /* TOCFL Levels */
+    .level-card {
+      height: 100%;
+      text-align: center;
+      padding: 30px;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+
+    .level-badge {
       display: inline-block;
-      padding: 0.3rem 0.8rem;
-      border-radius: var(--radius-full);
-      font-size: 0.8rem;
-      font-weight: bold;
-      background: var(--gradient-primary);
-      color: white;
-      box-shadow: var(--shadow-sm);
+      padding: 5px 15px;
+      background-color: var(--primary-color);
+      color: var(--white);
+      border-radius: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
     }
 
-    /* 圓形進度條 */
-    .progress-circle {
+    .level-progress {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
       position: relative;
-      width: 100px;
-      height: 100px;
     }
 
-    .progress-circle svg {
+    .level-progress svg {
       width: 100%;
       height: 100%;
     }
 
-    .progress-circle circle {
+    .level-progress circle {
       fill: none;
       stroke-width: 8;
       stroke-linecap: round;
@@ -1515,7 +476,7 @@
     }
 
     .progress-bg {
-      stroke: var(--light-color);
+      stroke: #e0e0e0;
     }
 
     .progress-fill {
@@ -1529,323 +490,76 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       font-weight: 700;
-      color: var(--text-color);
     }
 
-    /* 音頻課程卡片 */
-    .audio-lesson {
-      position: relative;
-      border-radius: var(--radius-md);
+    /* Practice Section */
+    .practice-card {
+      height: 100%;
+      padding: 0;
       overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition: var(--transition);
     }
 
-    .audio-lesson:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .lesson-image {
-      height: 150px;
+    .practice-image {
+      height: 180px;
       background-size: cover;
       background-position: center;
       position: relative;
     }
 
-    .lesson-badge {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      z-index: 2;
+    .practice-content {
+      padding: 20px;
     }
 
-    .lesson-content {
-      padding: 1.5rem;
-      background: white;
-    }
-
-    .lesson-meta {
+    .practice-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin: 1rem 0;
+      gap: 15px;
+      margin: 15px 0;
       font-size: 0.875rem;
       color: var(--text-light);
     }
 
-    .lesson-meta span {
+    .practice-meta span {
       display: flex;
       align-items: center;
     }
 
-    .lesson-meta i {
-      margin-right: 0.25rem;
+    .practice-meta i {
+      margin-right: 5px;
     }
 
-    .lesson-actions {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    /* 學習儀表板 */
-    .dashboard {
-      background: white;
+    /* Testimonial Section */
+    .testimonial-card {
+      padding: 30px;
       border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-      overflow: hidden;
     }
 
-    .dashboard-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .user-info {
+    .testimonial-author {
       display: flex;
       align-items: center;
+      margin-bottom: 20px;
     }
 
-    .user-info img {
-      width: 50px;
-      height: 50px;
+    .testimonial-author img {
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      margin-right: 1rem;
       object-fit: cover;
+      margin-right: 15px;
     }
 
-    .study-streak {
-      display: flex;
-      align-items: center;
-      background: var(--light-color);
-      padding: 0.5rem 1rem;
-      border-radius: var(--radius-full);
-      font-weight: 600;
-      color: var(--primary-color);
-    }
-
-    .study-streak i {
-      margin-right: 0.5rem;
+    .testimonial-rating {
       color: var(--secondary-color);
     }
 
-    .dashboard-stats {
-      display: flex;
-      padding: 1.5rem;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .stat-item {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      padding: 0 1rem;
-    }
-
-    .stat-item:not(:last-child) {
-      border-right: 1px solid var(--border-color);
-    }
-
-    .stat-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--light-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 1rem;
-      color: var(--primary-color);
-    }
-
-    .stat-item h5 {
-      font-size: 1.25rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .stat-item p {
-      font-size: 0.875rem;
-      color: var(--text-light);
-      margin-bottom: 0;
-    }
-
-    .dashboard-progress {
-      padding: 1.5rem;
-    }
-
-    .dashboard-progress h5 {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
-
-    .progress-container {
-      margin-bottom: 1rem;
-    }
-
-    .progress-info {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 0.5rem;
-      font-size: 0.875rem;
-    }
-
-    /* 推薦卡片 */
-    .recommendation-card {
-      display: flex;
-      align-items: center;
-      padding: 1.5rem;
-      background: white;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-      transition: var(--transition);
-    }
-
-    .recommendation-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .card-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: var(--radius-md);
-      background: var(--light-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 1.5rem;
-      color: var(--primary-color);
-      font-size: 1.25rem;
-    }
-
-    .card-content {
-      flex: 1;
-    }
-
-    .card-content h5 {
-      margin-bottom: 0.5rem;
-    }
-
-    .card-content p {
-      font-size: 0.875rem;
-      margin-bottom: 1rem;
-    }
-
-    /* HSK級別卡片 */
-    .hsk-level {
-      background: white;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-      padding: 2rem;
-      text-align: center;
-      transition: var(--transition);
-    }
-
-    .hsk-level:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .level-header {
-      margin-bottom: 1.5rem;
-    }
-
-    .level-header h3 {
-      color: var(--primary-color);
-    }
-
-    .level-progress {
-      margin-bottom: 1.5rem;
-      display: flex;
-      justify-content: center;
-    }
-
-    .level-stats {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .level-stats div {
-      padding: 0 1rem;
-    }
-
-    .level-stats div:not(:last-child) {
-      border-right: 1px solid var(--border-color);
-    }
-
-    .level-stats span {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--primary-color);
-      display: block;
-    }
-
-    .level-stats small {
-      font-size: 0.875rem;
-      color: var(--text-light);
-    }
-
-    /* 模擬考試卡片 */
-    .mock-exam {
-      background: white;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .exam-header {
-      margin-bottom: 2rem;
-    }
-
-    .exam-header h3 {
-      color: var(--primary-color);
-    }
-
-    .exam-features {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 2rem;
-    }
-
-    .feature {
-      flex: 1;
-      padding: 0 1rem;
-    }
-
-    .feature i {
-      font-size: 2rem;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-    }
-
-    .feature h5 {
-      margin-bottom: 0.5rem;
-    }
-
-    .feature p {
-      font-size: 0.875rem;
-    }
-
-    /* 價格卡片 */
+    /* Pricing Section */
     .pricing-card {
-      position: relative;
-      background: white;
+      height: 100%;
+      padding: 30px;
+      text-align: center;
       border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-      padding: 2rem;
-      transition: var(--transition);
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
     }
 
     .pricing-card.popular {
@@ -1859,40 +573,18 @@
     .popular-badge {
       position: absolute;
       top: 0;
-      right: 2rem;
+      right: 30px;
       transform: translateY(-50%);
-      background: var(--gradient-primary);
-      color: white;
-      padding: 0.25rem 1rem;
-      border-radius: var(--radius-full);
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 5px 15px;
+      border-radius: 20px;
       font-size: 0.75rem;
       font-weight: 700;
-    }
-
-    .premium-badge {
-      position: absolute;
-      top: 0;
-      right: 2rem;
-      transform: translateY(-50%);
-      background: var(--gradient-secondary);
-      color: white;
-      padding: 0.25rem 1rem;
-      border-radius: var(--radius-full);
-      font-size: 0.75rem;
-      font-weight: 700;
-    }
-
-    .pricing-header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .pricing-header h3 {
-      margin-bottom: 0.5rem;
     }
 
     .price {
-      margin: 1rem 0;
+      margin: 20px 0;
     }
 
     .price span {
@@ -1907,17 +599,18 @@
     }
 
     .pricing-features {
-      margin-bottom: 2rem;
+      margin: 30px 0;
+      text-align: left;
     }
 
     .pricing-features li {
-      margin-bottom: 1rem;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
     }
 
     .pricing-features i {
-      margin-right: 0.5rem;
+      margin-right: 10px;
       width: 20px;
       text-align: center;
     }
@@ -1930,109 +623,34 @@
       color: var(--danger-color);
     }
 
-    /* 企業價格卡片 */
-    .enterprise-pricing {
-      background: white;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-      padding: 2rem;
-    }
-
-    .enterprise-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .enterprise-content h3 {
-      margin-bottom: 0.5rem;
-    }
-
-    /* 價格標籤 */
-    .pricing-tabs {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .pricing-tab {
-      padding: 0.75rem 1.5rem;
-      cursor: pointer;
-      font-weight: 500;
-      color: var(--text-light);
-      position: relative;
-    }
-
-    .pricing-tab.active {
-      color: var(--primary-color);
-    }
-
-    .pricing-tab.active::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: var(--primary-color);
-    }
-
-    .pricing-tab .badge {
-      margin-left: 0.5rem;
-      background: var(--accent-color);
-      color: white;
-      padding: 0.15rem 0.5rem;
-      border-radius: var(--radius-full);
-      font-size: 0.75rem;
-    }
-
-    /* 頁腳 */
+    /* Footer */
     .footer {
-      background: var(--dark-color);
-      color: white;
-      padding: 4rem 0 0;
-    }
-
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    .footer-main {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-
-    .footer-about {
-      flex: 0 0 30%;
-      max-width: 30%;
-      padding-right: 2rem;
+      background-color: #263238;
+      color: var(--white);
+      padding: 80px 0 0;
     }
 
     .footer-logo {
       display: flex;
       align-items: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 20px;
       font-size: 1.5rem;
       font-weight: 700;
     }
 
     .footer-logo i {
-      margin-right: 0.5rem;
+      margin-right: 10px;
       font-size: 1.75rem;
     }
 
     .footer-about p {
       color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 1.5rem;
+      margin-bottom: 20px;
     }
 
     .footer-social {
       display: flex;
-      gap: 1rem;
+      gap: 10px;
     }
 
     .social-icon {
@@ -2043,134 +661,43 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: var(--white);
       transition: var(--transition);
     }
 
     .social-icon:hover {
       background: var(--primary-color);
-      color: white;
+      color: var(--white);
       transform: translateY(-3px);
     }
 
-    .footer-links {
-      flex: 0 0 50%;
-      max-width: 50%;
-      display: flex;
-    }
-
-    .links-column {
-      flex: 1;
-      padding: 0 1rem;
-    }
-
-    .links-column h4 {
-      color: white;
-      margin-bottom: 1.5rem;
+    .footer-links h4 {
+      color: var(--white);
+      margin-bottom: 20px;
       font-size: 1.125rem;
     }
 
-    .links-column ul {
+    .footer-links ul {
       list-style: none;
     }
 
-    .links-column li {
-      margin-bottom: 0.75rem;
+    .footer-links li {
+      margin-bottom: 10px;
     }
 
-    .links-column a {
+    .footer-links a {
       color: rgba(255, 255, 255, 0.7);
-      transition: var(--transition-fast);
+      transition: var(--transition);
     }
 
-    .links-column a:hover {
-      color: white;
-      text-decoration: none;
-    }
-
-    .footer-newsletter {
-      flex: 0 0 20%;
-      max-width: 20%;
-    }
-
-    .footer-newsletter h4 {
-      color: white;
-      margin-bottom: 1.5rem;
-      font-size: 1.125rem;
-    }
-
-    .footer-newsletter p {
-      color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 1.5rem;
-      font-size: 0.875rem;
-    }
-
-    .newsletter-form {
-      display: flex;
-      margin-bottom: 1.5rem;
-    }
-
-    .newsletter-form input {
-      flex: 1;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: var(--radius-md) 0 0 var(--radius-md);
-      font-size: 0.875rem;
-    }
-
-    .newsletter-form button {
-      padding: 0 1rem;
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      cursor: pointer;
-      transition: var(--transition-fast);
-    }
-
-    .newsletter-form button:hover {
-      background: var(--primary-dark);
-    }
-
-    .app-download p {
-      color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 0.75rem;
-      font-size: 0.875rem;
-    }
-
-    .app-buttons {
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .app-btn {
-      display: flex;
-      align-items: center;
-      padding: 0.5rem 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
-      border-radius: var(--radius-md);
-      font-size: 0.75rem;
-      transition: var(--transition-fast);
-    }
-
-    .app-btn:hover {
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-      text-decoration: none;
-    }
-
-    .app-btn i {
-      margin-right: 0.5rem;
-      font-size: 1.25rem;
+    .footer-links a:hover {
+      color: var(--white);
     }
 
     .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 0;
+      padding: 20px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 50px;
     }
 
     .footer-copyright {
@@ -2178,32 +705,16 @@
       font-size: 0.875rem;
     }
 
-    .footer-legal {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .footer-legal a {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 0.875rem;
-      transition: var(--transition-fast);
-    }
-
-    .footer-legal a:hover {
-      color: white;
-      text-decoration: none;
-    }
-
-    /* 返回頂部按鈕 */
+    /* Back to Top */
     .back-to-top {
       position: fixed;
-      bottom: 2rem;
-      right: 2rem;
+      bottom: 30px;
+      right: 30px;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background: var(--primary-color);
-      color: white;
+      color: var(--white);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -2225,147 +736,15 @@
       transform: translateY(-3px);
     }
 
-    /* 全局加載指示器 */
-    .global-loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      transition: opacity 0.5s ease;
-    }
-
-    .loader-content {
-      text-align: center;
-    }
-
-    .loader-spinner {
-      width: 50px;
-      height: 50px;
-      border: 5px solid var(--light-color);
-      border-top-color: var(--primary-color);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 1rem;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    /* 粒子背景 */
-    .particles-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    /* 自定義滾動條 */
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--light-color);
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--primary-dark);
-    }
-
-    /* 動畫效果 */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .animate-fadeInUp {
-      animation: fadeInUp 0.6s ease forwards;
-    }
-
-    /* 延遲動畫 */
-    .delay-1 { animation-delay: 0.1s; }
-    .delay-2 { animation-delay: 0.2s; }
-    .delay-3 { animation-delay: 0.3s; }
-    .delay-4 { animation-delay: 0.4s; }
-    .delay-5 { animation-delay: 0.5s; }
-
-    /* 視頻容器 */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-      overflow: hidden;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* 響應式斷點 */
-    @media (max-width: 1200px) {
-      /* 大屏幕平板樣式 */
-      .hero h1 {
-        font-size: 3rem;
-      }
-      
-      .globe-container {
-        right: -150px;
-      }
-      
-      .footer-about {
-        flex: 0 0 40%;
-        max-width: 40%;
-      }
-      
-      .footer-links {
-        flex: 0 0 60%;
-        max-width: 60%;
-      }
-      
-      .footer-newsletter {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-top: 2rem;
-      }
-    }
-
+    /* Responsive Styles */
     @media (max-width: 992px) {
-      /* 小屏幕平板樣式 */
       .hero h1 {
         font-size: 2.5rem;
       }
       
       .hero-content {
-        max-width: 100%;
         text-align: center;
+        max-width: 100%;
       }
       
       .hero-buttons {
@@ -2375,136 +754,60 @@
       .hero-stats {
         justify-content: center;
       }
-      
-      .globe-container {
-        display: none;
-      }
-      
-      .footer-about {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 2rem;
-        padding-right: 0;
-      }
-      
-      .footer-links {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 2rem;
-      }
-      
-      .exam-features {
-        flex-wrap: wrap;
-        gap: 1.5rem;
-      }
-      
-      .feature {
-        flex: 0 0 calc(50% - 1.5rem);
-        max-width: calc(50% - 1.5rem);
-      }
     }
 
     @media (max-width: 768px) {
-      /* 手機樣式 */
       .section {
-        padding: 3rem 0;
+        padding: 60px 0;
       }
       
       .section-lg {
-        padding: 5rem 0;
-      }
-      
-      .section-xl {
-        padding: 7rem 0;
+        padding: 80px 0;
       }
       
       .mobile-menu-btn {
         display: block;
       }
       
-      nav {
+      .nav-menu {
         position: fixed;
         top: 80px;
         left: 0;
         right: 0;
-        background: white;
+        background: var(--white);
         box-shadow: var(--shadow-lg);
-        padding: 1rem;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-20px);
         transition: var(--transition);
       }
       
-      nav.active {
+      .nav-menu.active {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
       }
       
-      nav ul {
-        flex-direction: column;
-      }
-      
-      nav ul li {
+      .nav-item {
         margin-left: 0;
-        margin-bottom: 0.5rem;
+        margin-bottom: 15px;
+        width: 100%;
       }
       
-      nav ul li a {
+      .nav-link {
         color: var(--text-color);
-        padding: 0.75rem;
+        padding: 10px 0;
       }
       
-      .user-dropdown-menu {
-        position: static;
-        width: auto;
-        box-shadow: none;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        padding: 0;
-        margin-top: 0.5rem;
-      }
-      
-      .typewriter {
-        white-space: normal;
-        border-right: none;
-        animation: none;
-      }
-      
-      .exam-features {
-        flex-direction: column;
-      }
-      
-      .feature {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-      }
-      
-      .feature:last-child {
-        margin-bottom: 0;
-      }
-      
-      .pricing-tabs {
-        flex-wrap: wrap;
-      }
-      
-      .pricing-tab {
-        flex: 0 0 100%;
-        max-width: 100%;
-        text-align: center;
-        border-bottom: 1px solid var(--border-color);
-      }
-      
-      .pricing-tab.active::after {
-        display: none;
+      .nav-link::after {
+        background: var(--primary-color);
       }
     }
 
     @media (max-width: 576px) {
-      /* 小手機樣式 */
       .hero h1 {
         font-size: 2rem;
       }
@@ -2515,253 +818,81 @@
       
       .hero-buttons {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 10px;
       }
       
       .hero-stats {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 10px;
       }
       
       .stat-card {
         justify-content: center;
       }
-      
-      .links-column {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-      }
-      
-      .links-column:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    /* 打印樣式 */
-    @media print {
-      .no-print {
-        display: none !important;
-      }
-      
-      body {
-        background: white;
-        color: black;
-        font-size: 12pt;
-      }
-      
-      a::after {
-        content: " (" attr(href) ")";
-        font-size: 0.8em;
-        font-weight: normal;
-      }
-      
-      .section {
-        padding: 1rem 0 !important;
-      }
-      
-      .card {
-        box-shadow: none !important;
-        border: 1px solid #ddd !important;
-      }
     }
   </style>
 </head>
 <body>
-  <!-- 3D粒子背景 -->
-  <div id="particles-js" class="particles-bg"></div>
-
-  <!-- 智能導航欄 -->
-  <header class="nav-enhanced">
-    <div class="header-container">
-      <a href="#" class="logo breathing-effect">
-        <i class="fas fa-language fa-shake" style="--fa-animation-duration: 3s;"></i>
-        <span>Learning Mandarin</span>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="logo">
+        <i class="fas fa-language"></i>
+        <span>TOCFL Việt Nam</span>
       </a>
 
-      <button class="mobile-menu-btn tooltip" data-tooltip="Menu">
+      <button class="mobile-menu-btn">
         <i class="fas fa-bars"></i>
       </button>
 
-      <nav>
-        <ul>
-          <li><a href="#" class="active"><i class="fas fa-home"></i> Trang Chủ</a></li>
-          <li><a href="#listening"><i class="fas fa-headphones"></i> Luyện Nghe</a></li>
-          <li><a href="#practice"><i class="fas fa-book-open"></i> Góc Học Tập</a></li>
-          <li><a href="#hsk"><i class="fas fa-graduation-cap"></i> TOCFL Test</a></li>
-          <li><a href="#ai"><i class="fas fa-robot"></i>Trợ Lý AI</a></li>
-          <li>
-            <div class="user-dropdown">
-              <div class="user-avatar tooltip" data-tooltip="我的帳戶">t
-                <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4643588.jpg" alt="User">
-              </div>
-              <div class="user-dropdown-menu">
-                <a href="#"><i class="fas fa-user"></i> Cá Nhân Hoá</a>
-                <a href="#"><i class="fas fa-bookmark"></i> Kho Lưu Trữ</a>
-                <a href="#"><i class="fas fa-chart-line"></i> Tiến Độ Học Tập</a>
-                <hr>
-                <a href="#" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</a>
-                <a href="#" id="registerBtn"><i class="fas fa-user-plus"></i> Đăng Ký</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link active"><i class="fas fa-home"></i> Trang Chủ</a></li>
+        <li class="nav-item"><a href="#features" class="nav-link"><i class="fas fa-star"></i> Tính Năng</a></li>
+        <li class="nav-item"><a href="#tocfl" class="nav-link"><i class="fas fa-graduation-cap"></i> Luyện Thi TOCFL</a></li>
+        <li class="nav-item"><a href="#practice" class="nav-link"><i class="fas fa-book-open"></i> Bài Tập</a></li>
+        <li class="nav-item"><a href="#pricing" class="nav-link"><i class="fas fa-crown"></i> Gói Học</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Liên Hệ</a></li>
+        <li class="nav-item"><a href="#" class="nav-link btn btn-outline btn-sm"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</a></li>
+      </ul>
     </div>
   </header>
 
-  <!-- 增強型英雄區域 -->
-  <section class="hero gradient-bg">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <h1 class="neon-text animate__animated animate__fadeInDown">Cùng Nắm Vững Kiến Thức Tiếng Trung</h1>
-        <p class="animate__animated animate__fadeIn animate__delay-1s">Trải nghiệm học tập đắm chìm được điều khiển bởi AI, giúp bạn tư duy như một người bản ngữ.</p>
+        <h1>Luyện Thi TOCFL Hiệu Quả Cho Người Việt</h1>
+        <p>Hệ thống học tiếng Trung thông minh kết hợp công nghệ AI, giúp bạn đạt điểm cao trong kỳ thi TOCFL một cách dễ dàng.</p>
         
-        <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
-          <a href="#ai" class="btn btn-primary btn-lg">
-            <i class="fas fa-robot"></i> Trải nghiệm trợ lý AI
+        <div class="hero-buttons">
+          <a href="#pricing" class="btn btn-primary btn-lg">
+            <i class="fas fa-rocket"></i> Bắt Đầu Ngay
           </a>
-          <a href="#pricing" class="btn btn-outline btn-lg">
-            <i class="fas fa-crown"></i> Nâng Cấp Plus
+          <a href="#features" class="btn btn-outline btn-lg">
+            <i class="fas fa-play-circle"></i> Xem Tính Năng
           </a>
         </div>
         
-        <div class="hero-stats animate__animated animate__fadeIn animate__delay-3s">
-          <div class="stat-card card-3d">
+        <div class="hero-stats">
+          <div class="stat-card">
             <i class="fas fa-users"></i>
             <div>
-              <span>+50,000</span>
-              <small>HỌC VIÊN TOÀN CẦU</small>
+              <span>+10,000</span>
+              <small>Học Viên</small>
             </div>
           </div>
-          <div class="stat-card card-3d">
+          <div class="stat-card">
             <i class="fas fa-chart-line"></i>
             <div>
-              <span>98%</span>
-              <small>ĐỘ HÀI LÒNG</small>
+              <span>95%</span>
+              <small>Đỗ TOCFL</small>
             </div>
           </div>
-          <div class="stat-card card-3d">
-            <i class="fas fa-trophy"></i>
+          <div class="stat-card">
+            <i class="fas fa-clock"></i>
             <div>
-              <span>3x</span>
-              <small>HIỆU QUẢ HỌC TẬP</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 3D地球動畫 -->
-      <div class="globe-container">
-        <div id="globe" style="width: 400px; height: 400px;"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI學習助手部分 -->
-  <section id="ai" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2 class="animate-fadeInUp">TRỢ LÝ AI</h2>
-        <p class="animate-fadeInUp delay-1">Giáo viên tiếng Trung thông minh 24/7 của bạn, cung cấp hướng dẫn cá nhân hóa mọi lúc mọi nơi.</p>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-4">
-          <!-- AI功能卡片1 -->
-          <div class="flip-card animate-fadeInUp delay-2">
-            <div class="flip-card-inner">
-              <div class="flip-card-front card-3d">
-                <div class="card-body text-center">
-                  <div class="mb-4">
-                    <i class="fas fa-comment-dots fa-3x text-primary"></i>
-                  </div>
-                  <h3>Thực hành đối thoại ngay lập tức.</h3>
-                  <p>Tiến hành cuộc trò chuyện tự nhiên với AI để nâng cao khả năng nói.</p>
-                </div>
-              </div>
-              <div class="flip-card-back">
-                <h3>Thực hành đối thoại ngay lập tức.</h3>
-                <p>AI của chúng tôi có thể hiểu câu trả lời của bạn và cung cấp phản hồi ngay lập tức, mô phỏng tình huống đối thoại thực tế.</p>
-                <button class="btn btn-primary mt-3">Lập tức trải nghiệm</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <!-- AI功能卡片2 -->
-          <div class="flip-card animate-fadeInUp delay-3">
-            <div class="flip-card-inner">
-              <div class="flip-card-front card-3d">
-                <div class="card-body text-center">
-                  <div class="mb-4">
-                    <i class="fas fa-spell-check fa-3x text-primary"></i>
-                  </div>
-                  <h3>Sửa lỗi bài viết thông minh</h3>
-                  <p>Nhận phản hồi viết chuyên nghiệp.</p>
-                </div>
-              </div>
-              <div class="flip-card-back">
-                <h3>Sửa lỗi bài viết thông minh</h3>
-                <p>AI sẽ kiểm tra ngữ pháp, từ ngữ và cách diễn đạt của bạn, cung cấp các gợi ý cải thiện.</p>
-                <button class="btn btn-primary mt-3">Lập tức trải nghiệm</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <!-- AI功能卡片3 -->
-          <div class="flip-card animate-fadeInUp delay-4">
-            <div class="flip-card-inner">
-              <div class="flip-card-front card-3d">
-                <div class="card-body text-center">
-                  <div class="mb-4">
-                    <i class="fas fa-user-graduate fa-3x text-primary"></i>
-                  </div>
-                  <h3>Kế hoạch học tập cá nhân hóa</h3>
-                  <p>Khóa học được thiết kế riêng theo nhu cầu.</p>
-                </div>
-              </div>
-              <div class="flip-card-back">
-                <h3>Kế hoạch học tập cá nhân hóa</h3>
-                <p>AI tạo ra lộ trình học tập tối ưu dựa trên trình độ và mục tiêu của bạn.</p>
-                <button class="btn btn-primary mt-3">Lập tức trải nghiệm</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- AI聊天演示 -->
-      <div class="card card-3d animate-fadeInUp delay-5 mt-5">
-        <div class="card-body">
-          <div class="chat-container">
-            <div class="chat-header d-flex align-items-center mb-4">
-              <div class="chat-avatar mr-3">
-                <img src="https://i.imgur.com/7D1ZS2J.png" alt="AI助教" width="50" height="50" class="rounded-circle">
-              </div>
-              <div class="chat-info">
-                <h4 class="mb-0">Trợ Lý AI</h4>
-                <p class="text-muted mb-0">Đang nhập...</p>
-              </div>
-            </div>
-            
-            <div class="chat-messages">
-              <div class="message ai-message mb-3">
-                <div class="message-content bg-light p-3 rounded">
-                  Xin chào! Tôi là trợ lý AI tiếng Trung của bạn. Hôm nay bạn muốn luyện tập gì? Chúng ta có thể thực hành đối thoại, sửa bài viết, hoặc giúp bạn giải đáp các vấn đề học tập.
-                </div>
-                <div class="message-time text-muted text-end mt-1 small">Vừa rồi</div>
-              </div>
-            </div>
-            
-            <div class="chat-input d-flex mt-4">
-              <input type="text" class="form-control mr-2" placeholder="輸入您的問題或回答...">
-              <button class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i>
-              </button>
+              <span>2x</span>
+              <small>Tiết Kiệm Thời Gian</small>
             </div>
           </div>
         </div>
@@ -2769,922 +900,556 @@
     </div>
   </section>
 
-  <!-- 增強型聽力訓練部分 -->
-  <section id="listening" class="section bg-light">
+  <!-- Features Section -->
+  <section id="features" class="section bg-light">
     <div class="container">
       <div class="section-title">
-        <h2>uyện nghe theo phương pháp nhập vai</h2>
-        <p>Ngữ cảnh thực tế + phân tích thông minh = Nâng cao khả năng nghe hiểu nhanh chóng</p>
+        <h2>Tính Năng Nổi Bật</h2>
+        <p>Công nghệ học tập tiên tiến dành riêng cho người Việt học TOCFL</p>
       </div>
       
-      <div class="row mb-5">
-        <div class="col-md-8">
-          <div class="card card-3d">
-            <div class="card-body">
-              <h4 class="mb-4">Sàng lọc thông minh</h4>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Độ khó</label>
-                    <select class="form-control">
-                      <option>Các cấp độ</option>
-                      <option>Sơ Cấp (A1-A2)</option>
-                      <option>Trung Cấp (B1-B2)</option>
-                      <option>Cao Cấp (C1-C2)</option>
-                    </select>
-                  </div>
-                </div>
-                
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Khẩu Âm</label>
-                    <select class="form-control">
-                      <option>Tất cả khẩu âm</option>
-                      <option>Khẩu âm Đài Loan</option>
-                      <option>Khẩu âm Hong Kong</option>
-                      <option>Giọng Đại Lục</option>
-                    </select>
-                  </div>
-                </div>
-                
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Chủ đề</label>
-                    <select class="form-control">
-                      <option>Tất cả chủ đề</option>
-                      <option>Cuộc Sống Hàng Ngày</option>
-                      <option>Nơi Làm Việc</option>
-                      <option>Tin Tức Và Thời Sự</option>
-                      <option>Lịch Sử Và Văn Hoá</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card card-3d">
-            <div class="card-body">
-              <h4 class="mb-4">Tiến độ luyện nghe</h4>
-              
-              <div class="progress-container mb-3">
-                <div class="progress-info d-flex justify-content-between mb-1">
-                  <span>Nghe sơ cấp</span>
-                  <span>75%</span>
-                </div>
-                <div class="progress-bar-enhanced">
-                  <div class="progress-bar-fill" style="width: 75%"></div>
-                </div>
-              </div>
-              
-              <div class="progress-container mb-3">
-                <div class="progress-info d-flex justify-content-between mb-1">
-                  <span>中級聽力</span>
-                  <span>42%</span>
-                </div>
-                <div class="progress-bar-enhanced">
-                  <div class="progress-bar-fill" style="width: 42%"></div>
-                </div>
-              </div>
-              
-              <div class="progress-container">
-                <div class="progress-info d-flex justify-content-between mb-1">
-                  <span>高級聽力</span>
-                  <span>15%</span>
-                </div>
-                <div class="progress-bar-enhanced">
-                  <div class="progress-bar-fill" style="width: 15%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 增強型音頻課程列表 -->
       <div class="row">
-        <!-- 音頻課程1 -->
         <div class="col-md-4 mb-4">
-          <div class="audio-lesson card-3d h-100">
-            <div class="lesson-badge tag-enhanced">中級 B1</div>
-            <div class="lesson-image" style="background-image: url('https://images.unsplash.com/photo-1518457900604-b5df0f5a4242?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
-              <button class="play-btn-large">
-                <i class="fas fa-play"></i>
-              </button>
+          <div class="feature-card card">
+            <div class="feature-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Trợ Lý AI</h3>
+            <p>Hệ thống AI thông minh giúp bạn luyện tập mọi lúc, sửa lỗi phát âm và ngữ pháp ngay lập tức.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="feature-card card">
+            <div class="feature-icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <h3>Luyện Nghe Chuẩn</h3>
+            <p>Hàng trăm bài luyện nghe với giọng đọc chuẩn Đài Loan, có phụ đề và giải thích chi tiết.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="feature-card card">
+            <div class="feature-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Từ Vựng Thông Minh</h3>
+            <p>Học từ vựng theo chủ đề TOCFL với hình ảnh, ví dụ và hệ thống ôn tập khoa học.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="feature-card card">
+            <div class="feature-icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Đề Thi Thử</h3>
+            <p>Ngân hàng đề thi thử TOCFL đầy đủ các cấp độ, mô phỏng kỳ thi thực tế.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="feature-card card">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Theo Dõi Tiến Độ</h3>
+            <p>Hệ thống phân tích điểm mạnh, yếu và đề xuất lộ trình học tập cá nhân hóa.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="feature-card card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Học Mọi Lúc</h3>
+            <p>Ứng dụng di động cho phép bạn học mọi lúc mọi nơi, đồng bộ trên mọi thiết bị.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOCFL Levels Section -->
+  <section id="tocfl" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Các Cấp Độ TOCFL</h2>
+        <p>Hệ thống luyện thi toàn diện cho mọi trình độ</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="level-card card">
+            <div class="level-badge">Band A</div>
+            <h3>TOCFL Cấp 1-2</h3>
+            <p>Dành cho người mới bắt đầu học tiếng Trung</p>
+            
+            <div class="level-progress">
+              <svg>
+                <circle class="progress-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress-fill" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="progress-text">85%</div>
             </div>
             
-            <div class="lesson-content">
-              <h3>台灣夜市美食指南</h3>
-              <div class="lesson-meta">
-                <span><i class="fas fa-microphone"></i> 台灣口音</span>
-                <span><i class="fas fa-clock"></i> 3:22</span>
-                <span><i class="fas fa-headphones"></i> 85% 理解度</span>
+            <div class="d-flex justify-content-between mb-3">
+              <div>
+                <h5>300</h5>
+                <small>Từ Vựng</small>
+              </div>
+              <div>
+                <h5>40</h5>
+                <small>Bài Học</small>
+              </div>
+              <div>
+                <h5>5</h5>
+                <small>Đề Thi</small>
+              </div>
+            </div>
+            
+            <a href="#" class="btn btn-primary btn-block">Bắt Đầu Học</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="level-card card">
+            <div class="level-badge">Band B</div>
+            <h3>TOCFL Cấp 3-4</h3>
+            <p>Dành cho người có trình độ trung cấp</p>
+            
+            <div class="level-progress">
+              <svg>
+                <circle class="progress-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress-fill" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="progress-text">72%</div>
+            </div>
+            
+            <div class="d-flex justify-content-between mb-3">
+              <div>
+                <h5>1200</h5>
+                <small>Từ Vựng</small>
+              </div>
+              <div>
+                <h5>60</h5>
+                <small>Bài Học</small>
+              </div>
+              <div>
+                <h5>8</h5>
+                <small>Đề Thi</small>
+              </div>
+            </div>
+            
+            <a href="#" class="btn btn-primary btn-block">Bắt Đầu Học</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="level-card card">
+            <div class="level-badge">Band C</div>
+            <h3>TOCFL Cấp 5-6</h3>
+            <p>Dành cho người có trình độ cao cấp</p>
+            
+            <div class="level-progress">
+              <svg>
+                <circle class="progress-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress-fill" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="progress-text">65%</div>
+            </div>
+            
+            <div class="d-flex justify-content-between mb-3">
+              <div>
+                <h5>2500</h5>
+                <small>Từ Vựng</small>
+              </div>
+              <div>
+                <h5>80</h5>
+                <small>Bài Học</small>
+              </div>
+              <div>
+                <h5>10</h5>
+                <small>Đề Thi</small>
+              </div>
+            </div>
+            
+            <a href="#" class="btn btn-primary btn-block">Bắt Đầu Học</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Section -->
+  <section id="practice" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bài Tập Mẫu</h2>
+        <p>Luyện tập với các dạng bài thi TOCFL thực tế</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="practice-card card">
+            <div class="practice-image" style="background-image: url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+            <div class="practice-content">
+              <h3>Luyện Nghe Cấp 3</h3>
+              <p>Luyện nghe với các đoạn hội thoại hàng ngày trong đề thi TOCFL Band B.</p>
+              
+              <div class="practice-meta">
+                <span><i class="fas fa-question-circle"></i> 20 Câu Hỏi</span>
+                <span><i class="fas fa-clock"></i> 30 Phút</span>
               </div>
               
-              <div class="lesson-actions">
-                <button class="btn btn-sm btn-outline">
-                  <i class="fas fa-bookmark"></i> 收藏
-                </button>
-                <button class="btn btn-sm btn-primary">
-                  <i class="fas fa-chart-line"></i> 練習
-                </button>
-              </div>
+              <a href="#" class="btn btn-primary btn-block">Làm Bài Ngay</a>
             </div>
           </div>
         </div>
         
-        <!-- 音頻課程2 -->
         <div class="col-md-4 mb-4">
-          <div class="audio-lesson card-3d h-100">
-            <div class="lesson-badge tag-enhanced">高級 C1</div>
-            <div class="lesson-image" style="background-image: url('https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
-              <button class="play-btn-large">
-                <i class="fas fa-play"></i>
-              </button>
-            </div>
-            
-            <div class="lesson-content">
-              <h3>台灣科技產業發展</h3>
-              <div class="lesson-meta">
-                <span><i class="fas fa-microphone"></i> 台灣口音</span>
-                <span><i class="fas fa-clock"></i> 4:15</span>
-                <span><i class="fas fa-headphones"></i> 72% 理解度</span>
+          <div class="practice-card card">
+            <div class="practice-image" style="background-image: url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+            <div class="practice-content">
+              <h3>Đọc Hiểu Cấp 4</h3>
+              <p>Luyện đọc hiểu với các bài báo, thông báo trong đề thi TOCFL Band B.</p>
+              
+              <div class="practice-meta">
+                <span><i class="fas fa-question-circle"></i> 25 Câu Hỏi</span>
+                <span><i class="fas fa-clock"></i> 40 Phút</span>
               </div>
               
-              <div class="lesson-actions">
-                <button class="btn btn-sm btn-outline">
-                  <i class="fas fa-bookmark"></i> 收藏
-                </button>
-                <button class="btn btn-sm btn-primary">
-                  <i class="fas fa-chart-line"></i> 練習
-                </button>
-              </div>
+              <a href="#" class="btn btn-primary btn-block">Làm Bài Ngay</a>
             </div>
           </div>
         </div>
         
-        <!-- 音頻課程3 -->
         <div class="col-md-4 mb-4">
-          <div class="audio-lesson card-3d h-100">
-            <div class="lesson-badge tag-enhanced">初級 A2</div>
-            <div class="lesson-image" style="background-image: url('https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
-              <button class="play-btn-large">
-                <i class="fas fa-play"></i>
-              </button>
-            </div>
-            
-            <div class="lesson-content">
-              <h3>餐廳訂位與點餐</h3>
-              <div class="lesson-meta">
-                <span><i class="fas fa-microphone"></i> 標準口音</span>
-                <span><i class="fas fa-clock"></i> 2:45</span>
-                <span><i class="fas fa-headphones"></i> 91% 理解度</span>
+          <div class="practice-card card">
+            <div class="practice-image" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+            <div class="practice-content">
+              <h3>Từ Vựng Cấp 2</h3>
+              <p>Ôn tập từ vựng thường xuất hiện trong đề thi TOCFL Band A.</p>
+              
+              <div class="practice-meta">
+                <span><i class="fas fa-question-circle"></i> 50 Câu Hỏi</span>
+                <span><i class="fas fa-clock"></i> 25 Phút</span>
               </div>
               
-              <div class="lesson-actions">
-                <button class="btn btn-sm btn-outline">
-                  <i class="fas fa-bookmark"></i> 收藏
-                </button>
-                <button class="btn btn-sm btn-primary">
-                  <i class="fas fa-chart-line"></i> 練習
-                </button>
-              </div>
+              <a href="#" class="btn btn-primary btn-block">Làm Bài Ngay</a>
             </div>
           </div>
         </div>
       </div>
       
       <div class="text-center mt-4">
-        <button class="btn btn-primary btn-lg">
-          <i class="fas fa-arrow-down"></i> 載入更多課程
-        </button>
+        <a href="#" class="btn btn-outline btn-lg">
+          <i class="fas fa-book-open"></i> Xem Thêm Bài Tập
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- 增強型學習資源部分 -->
-  <section id="practice" class="section">
+  <!-- Testimonial Section -->
+  <section class="section">
     <div class="container">
       <div class="section-title">
-        <h2>智能學習中心</h2>
-        <p>根據您的水平量身定制的學習資源</p>
-      </div>
-      
-      <div class="card card-3d mb-5">
-        <div class="card-body">
-          <div class="dashboard-header">
-            <div class="user-info">
-              <div class="user-avatar">
-                <img src="https://ui-avatars.com/api/?name=學習者&background=4CAF50&color=fff" alt="User">
-              </div>
-              <div>
-                <h4>學習者</h4>
-                <p>中級 B1 水平</p>
-              </div>
-            </div>
-            
-            <div class="study-streak">
-              <i class="fas fa-fire"></i>
-              <span>連續學習 15 天</span>
-            </div>
-          </div>
-          
-          <div class="dashboard-stats">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="fas fa-book"></i>
-              </div>
-              <div>
-                <h5>128</h5>
-                <p>已完成課程</p>
-              </div>
-            </div>
-            
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div>
-                <h5>576</h5>
-                <p>已完成練習</p>
-              </div>
-            </div>
-            
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="fas fa-trophy"></i>
-              </div>
-              <div>
-                <h5>24</h5>
-                <p>獲得成就</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="dashboard-progress">
-            <h5>您的學習進度</h5>
-            <div class="progress-container">
-              <div class="progress-info">
-                <span>HSK 4 準備</span>
-                <span>65%</span>
-              </div>
-              <div class="progress-bar-enhanced">
-                <div class="progress-bar-fill" style="width: 65%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 智能推薦學習卡片 -->
-      <h4 class="mb-4">為您推薦</h4>
-      
-      <div class="row">
-        <!-- 推薦卡片1 -->
-        <div class="col-md-4 mb-4">
-          <div class="recommendation-card card-3d h-100">
-            <div class="card-icon">
-              <i class="fas fa-comments"></i>
-            </div>
-            <div class="card-content">
-              <h5>加強: 商務會話</h5>
-              <p>根據您的測試結果，這是最需要改進的領域</p>
-              <button class="btn btn-sm btn-primary">開始練習</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 推薦卡片2 -->
-        <div class="col-md-4 mb-4">
-          <div class="recommendation-card card-3d h-100">
-            <div class="card-icon">
-              <i class="fas fa-newspaper"></i>
-            </div>
-            <div class="card-content">
-              <h5>閱讀: 台灣新聞</h5>
-              <p>適合您水平的真實閱讀材料</p>
-              <button class="btn btn-sm btn-primary">開始閱讀</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 推薦卡片3 -->
-        <div class="col-md-4 mb-4">
-          <div class="recommendation-card card-3d h-100">
-            <div class="card-icon">
-              <i class="fas fa-film"></i>
-            </div>
-            <div class="card-content">
-              <h5>觀看: 台灣電視劇</h5>
-              <p>帶字幕的視頻，提升聽力理解</p>
-              <button class="btn btn-sm btn-primary">觀看推薦</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 學習資源分類 -->
-      <div class="row mt-5">
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-book text-primary mr-2"></i> 文法學習</h4>
-              <ul class="list-unstyled">
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 基礎文法結構</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 常用句型練習</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 時態與語態</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 連接詞與轉折詞</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 高級文法解析</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-font text-primary mr-2"></i> 詞彙擴展</h4>
-              <ul class="list-unstyled">
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 日常生活詞彙</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 商業與職場用語</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 成語與諺語</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 學術與專業詞彙</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 俚語與口語表達</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-microphone-alt text-primary mr-2"></i> 口語練習</h4>
-              <ul class="list-unstyled">
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 日常對話模擬</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 發音矯正</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 商務談判練習</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 演講與報告技巧</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 辯論與討論</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-pen-fancy text-primary mr-2"></i> 寫作提升</h4>
-              <ul class="list-unstyled">
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 基礎寫作技巧</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 電子郵件與信件</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 報告與論文寫作</a></li>
-                <li class="mb-2"><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 創意寫作</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right text-primary mr-2"></i> 學術寫作</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 增強型HSK備考部分 -->
-  <section id="hsk" class="section bg-light">
-    <div class="container">
-      <div class="section-title">
-        <h2>HSK 智能備考系統</h2>
-        <p>基於AI分析的個性化考試準備方案</p>
-      </div>
-      
-      <div class="row mb-5">
-        <!-- HSK 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="hsk-level card-3d h-100">
-            <div class="level-header">
-              <h3>HSK 1</h3>
-              <p>初級水平</p>
-            </div>
-            <div class="level-progress">
-              <div class="progress-circle" data-progress="85">
-                <svg>
-                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                  <circle class="progress-fill" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <div class="progress-text">85%</div>
-              </div>
-            </div>
-            <div class="level-stats">
-              <div>
-                <span>150</span>
-                <small>詞彙量</small>
-              </div>
-              <div>
-                <span>40</span>
-                <small>分鐘</small>
-              </div>
-            </div>
-            <button class="btn btn-primary">開始練習</button>
-          </div>
-        </div>
-        
-        <!-- HSK 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="hsk-level card-3d h-100">
-            <div class="level-header">
-              <h3>HSK 2</h3>
-              <p>基礎水平</p>
-            </div>
-            <div class="level-progress">
-              <div class="progress-circle" data-progress="72">
-                <svg>
-                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                  <circle class="progress-fill" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <div class="progress-text">72%</div>
-              </div>
-            </div>
-            <div class="level-stats">
-              <div>
-                <span>300</span>
-                <small>詞彙量</small>
-              </div>
-              <div>
-                <span>55</span>
-                <small>分鐘</small>
-              </div>
-            </div>
-            <button class="btn btn-primary">開始練習</button>
-          </div>
-        </div>
-        
-        <!-- HSK 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="hsk-level card-3d h-100">
-            <div class="level-header">
-              <h3>HSK 3</h3>
-              <p>中級水平</p>
-            </div>
-            <div class="level-progress">
-              <div class="progress-circle" data-progress="65">
-                <svg>
-                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                  <circle class="progress-fill" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <div class="progress-text">65%</div>
-              </div>
-            </div>
-            <div class="level-stats">
-              <div>
-                <span>600</span>
-                <small>詞彙量</small>
-              </div>
-              <div>
-                <span>85</span>
-                <small>分鐘</small>
-              </div>
-            </div>
-            <button class="btn btn-primary">開始練習</button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- HSK模擬考試 -->
-      <div class="card card-3d">
-        <div class="card-body">
-          <div class="exam-header">
-            <h3>HSK 模擬考試</h3>
-            <p>完整模擬真實考試環境</p>
-          </div>
-          
-          <div class="exam-features">
-            <div class="feature">
-              <i class="fas fa-stopwatch"></i>
-              <h5>計時考試</h5>
-              <p>完全按照正式考試時間限制</p>
-            </div>
-            
-            <div class="feature">
-              <i class="fas fa-chart-bar"></i>
-              <h5>詳細分析</h5>
-              <p>考後獲得能力弱點分析</p>
-            </div>
-            
-            <div class="feature">
-              <i class="fas fa-redo"></i>
-              <h5>錯題重練</h5>
-              <p>針對錯題進行專項練習</p>
-            </div>
-          </div>
-          
-          <div class="text-center">
-            <button class="btn btn-primary btn-lg">
-              <i class="fas fa-play"></i> 開始模擬考試
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- HSK考試技巧 -->
-      <div class="row mt-5">
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-lightbulb text-primary mr-2"></i> 聽力技巧</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3"><strong>關鍵詞捕捉</strong> - 訓練耳朵捕捉對話中的關鍵詞彙</li>
-                <li class="mb-3"><strong>上下文推斷</strong> - 根據上下文推測不熟悉詞彙的含義</li>
-                <li class="mb-3"><strong>口音適應</strong> - 熟悉不同地區的中文口音</li>
-                <li><strong>速記技巧</strong> - 快速記錄重要信息的技巧</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-book-reader text-primary mr-2"></i> 閱讀技巧</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3"><strong>略讀與掃讀</strong> - 快速定位關鍵信息</li>
-                <li class="mb-3"><strong>詞彙推測</strong> - 根據上下文推測生詞意思</li>
-                <li class="mb-3"><strong>長句分析</strong> - 分解複雜句子結構</li>
-                <li><strong>時間管理</strong> - 合理分配閱讀各部分時間</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-pencil-alt text-primary mr-2"></i> 寫作技巧</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3"><strong>結構化寫作</strong> - 遵循標準的寫作結構</li>
-                <li class="mb-3"><strong>詞彙多樣性</strong> - 避免重複使用相同詞彙</li>
-                <li class="mb-3"><strong>文法準確性</strong> - 常見文法錯誤避免</li>
-                <li><strong>時間分配</strong> - 寫作各部分時間控制</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-comments text-primary mr-2"></i> 口語技巧</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3"><strong>流利度訓練</strong> - 提高回答的連貫性</li>
-                <li class="mb-3"><strong>發音矯正</strong> - 重點糾正常見發音問題</li>
-                <li class="mb-3"><strong>應答策略</strong> - 不同題型的回答技巧</li>
-                <li><strong>時間控制</strong> - 合理分配回答時間</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 增強型會員方案部分 -->
-  <section id="pricing" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>選擇您的學習方案</h2>
-        <p>投資您的語言未來，獲得無限可能</p>
-      </div>
-      
-      <div class="pricing-tabs d-flex justify-content-center mb-5">
-        <div class="pricing-tab active">月度方案</div>
-        <div class="pricing-tab">年度方案 <span class="badge">節省30%</span></div>
-        <div class="pricing-tab">終身會員</div>
+        <h2>Học Viên Nói Gì Về Chúng Tôi</h2>
+        <p>Những câu chuyện thành công từ học viên của TOCFL Việt Nam</p>
       </div>
       
       <div class="row">
-        <!-- 免費方案 -->
         <div class="col-md-4 mb-4">
-          <div class="pricing-card h-100">
-            <div class="pricing-header">
-              <h3>免費版</h3>
-              <div class="price">
-                <span>$0</span>
-                <small>/月</small>
+          <div class="testimonial-card card">
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Nguyễn Thị Hồng">
+              <div>
+                <h5>Nguyễn Thị Hồng</h5>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
-              <p>基礎學習體驗</p>
             </div>
-            
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> 每日10題練習限制</li>
-              <li><i class="fas fa-check"></i> HSK 1-2級資源</li>
-              <li><i class="fas fa-check"></i> 基礎聽力訓練</li>
-              <li><i class="fas fa-times"></i> AI助教功能</li>
-              <li><i class="fas fa-times"></i> 模擬考試系統</li>
-              <li><i class="fas fa-times"></i> 個性化學習計劃</li>
-            </ul>
-            
-            <button class="btn btn-outline btn-block">當前方案</button>
+            <p>"Nhờ luyện tập với hệ thống này, mình đã đạt TOCFL cấp 4 chỉ sau 3 tháng. Các bài luyện nghe rất sát với đề thi thực tế."</p>
           </div>
         </div>
         
-        <!-- 高級方案 -->
         <div class="col-md-4 mb-4">
-          <div class="pricing-card popular h-100">
-            <div class="popular-badge">最受歡迎</div>
-            <div class="pricing-header">
-              <h3>高級會員</h3>
-              <div class="price">
-                <span>$12.99</span>
-                <small>/月</small>
+          <div class="testimonial-card card">
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Trần Văn Nam">
+              <div>
+                <h5>Trần Văn Nam</h5>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
-              <p>進階學習體驗</p>
             </div>
-            
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> 無限練習</li>
-              <li><i class="fas fa-check"></i> HSK 1-4級完整資源</li>
-              <li><i class="fas fa-check"></i> 高級聽力訓練</li>
-              <li><i class="fas fa-check"></i> 基礎AI助教功能</li>
-              <li><i class="fas fa-check"></i> 模擬考試系統</li>
-              <li><i class="fas fa-times"></i> 個性化學習計劃</li>
-            </ul>
-            
-            <button class="btn btn-primary btn-block">升級方案</button>
+            <p>"Trợ lý AI giúp mình luyện phát âm rất hiệu quả. Mình đã cải thiện được điểm số phần thi nói từ 50 lên 85 điểm."</p>
           </div>
         </div>
         
-        <!-- 專業方案 -->
         <div class="col-md-4 mb-4">
-          <div class="pricing-card premium h-100">
-            <div class="premium-badge">專業版</div>
-            <div class="pricing-header">
-              <h3>專業會員</h3>
-              <div class="price">
-                <span>$24.99</span>
-                <small>/月</small>
+          <div class="testimonial-card card">
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lê Thị Mai">
+              <div>
+                <h5>Lê Thị Mai</h5>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
               </div>
-              <p>完整學習體驗</p>
             </div>
-            
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> 無限練習</li>
-              <li><i class="fas fa-check"></i> HSK 1-6級完整資源</li>
-              <li><i class="fas fa-check"></i> 專業聽力訓練</li>
-              <li><i class="fas fa-check"></i> 完整AI助教功能</li>
-              <li><i class="fas fa-check"></i> 模擬考試系統</li>
-              <li><i class="fas fa-check"></i> 個性化學習計劃</li>
-            </ul>
-            
-            <button class="btn btn-primary btn-block">升級方案</button>
+            <p>"Hệ thống từ vựng thông minh giúp mình nhớ từ rất lâu. Mình đã học được hơn 1000 từ trong 2 tháng mà không cảm thấy áp lực."</p>
           </div>
         </div>
       </div>
-      
-      <!-- 企業/教育方案 -->
-      <div class="card card-3d mt-4">
-        <div class="card-body">
-          <div class="enterprise-content">
-            <div>
-              <h3>企業/教育方案</h3>
-              <p>為團隊或班級提供最佳學習體驗</p>
-            </div>
-            <button class="btn btn-outline">聯繫我們</button>
-          </div>
-        </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Chọn Gói Học Phù Hợp</h2>
+        <p>Đầu tư cho tương lai của bạn với chi phí hợp lý nhất</p>
       </div>
       
-      <!-- 常見問題 -->
-      <div class="row mt-5">
-        <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
-            <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-question-circle text-primary mr-2"></i> 常見問題</h4>
-              <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      如何取消訂閱？
-                    </button>
-                  </h5>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      您可以隨時在帳戶設置中取消訂閱，取消後將在當前計費周期結束後生效。
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      是否提供退款？
-                    </button>
-                  </h5>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      我們提供14天無條件退款保證，如果您對我們的服務不滿意，可以在訂閱後14天內申請全額退款。
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      是否可以共享帳戶？
-                    </button>
-                  </h5>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      個人帳戶僅限本人使用，如需多人使用，請考慮我們的企業/教育方案。
-                    </div>
-                  </div>
-                </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card card">
+            <div class="pricing-header">
+              <h3>Cơ Bản</h3>
+              <div class="price">
+                <span>0đ</span>
+                <small>/tháng</small>
               </div>
+              <p>Dành cho người mới bắt đầu</p>
             </div>
+            
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 10 bài học mỗi ngày</li>
+              <li><i class="fas fa-check"></i> TOCFL Band A</li>
+              <li><i class="fas fa-check"></i> 2 đề thi thử</li>
+              <li><i class="fas fa-times"></i> Trợ lý AI</li>
+              <li><i class="fas fa-times"></i> Lộ trình cá nhân</li>
+              <li><i class="fas fa-times"></i> Hỗ trợ giáo viên</li>
+            </ul>
+            
+            <a href="#" class="btn btn-outline btn-block">Đăng Ký Ngay</a>
           </div>
         </div>
         
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card card popular">
+            <div class="popular-badge">Phổ Biến</div>
+            <div class="pricing-header">
+              <h3>Nâng Cao</h3>
+              <div class="price">
+                <span>499.000đ</span>
+                <small>/tháng</small>
+              </div>
+              <p>Dành cho người nghiêm túc</p>
+            </div>
+            
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Không giới hạn bài học</li>
+              <li><i class="fas fa-check"></i> TOCFL Band A-B</li>
+              <li><i class="fas fa-check"></i> 10 đề thi thử</li>
+              <li><i class="fas fa-check"></i> Trợ lý AI cơ bản</li>
+              <li><i class="fas fa-check"></i> Lộ trình cá nhân</li>
+              <li><i class="fas fa-times"></i> Hỗ trợ giáo viên</li>
+            </ul>
+            
+            <a href="#" class="btn btn-primary btn-block">Đăng Ký Ngay</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card card premium">
+            <div class="pricing-header">
+              <h3>Chuyên Sâu</h3>
+              <div class="price">
+                <span>899.000đ</span>
+                <small>/tháng</small>
+              </div>
+              <p>Dành cho người học chuyên nghiệp</p>
+            </div>
+            
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Không giới hạn bài học</li>
+              <li><i class="fas fa-check"></i> TOCFL Band A-C</li>
+              <li><i class="fas fa-check"></i> 20 đề thi thử</li>
+              <li><i class="fas fa-check"></i> Trợ lý AI nâng cao</li>
+              <li><i class="fas fa-check"></i> Lộ trình cá nhân</li>
+              <li><i class="fas fa-check"></i> Hỗ trợ giáo viên</li>
+            </ul>
+            
+            <a href="#" class="btn btn-primary btn-block">Đăng Ký Ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+        <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
+      </div>
+      
+      <div class="row">
         <div class="col-md-6 mb-4">
-          <div class="card card-3d h-100">
+          <div class="card h-100">
             <div class="card-body">
-              <h4 class="mb-4"><i class="fas fa-shield-alt text-primary mr-2"></i> 安全與隱私</h4>
-              <ul class="list-unstyled">
-                <li class="mb-3"><strong>數據加密</strong> - 所有用戶數據均經過加密處理</li>
-                <li class="mb-3"><strong>隱私保護</strong> - 我們不會出售或共享您的個人信息</li>
-                <li class="mb-3"><strong>安全支付</strong> - 使用SSL加密處理所有支付信息</li>
-                <li><strong>數據導出</strong> - 隨時可以導出您的學習數據</li>
-              </ul>
+              <h4 class="mb-4">Thông Tin Liên Hệ</h4>
               
-              <div class="mt-4">
-                <a href="#" class="btn btn-link">
-                  <i class="fas fa-file-alt mr-2"></i> 查看完整服務條款
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 用戶評價部分 -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="section-title">
-        <h2>學員評價</h2>
-        <p>聽聽我們的學員怎麼說</p>
-      </div>
-      
-      <div class="swiper testimonials-slider">
-        <div class="swiper-wrapper">
-          <!-- 評價1 -->
-          <div class="swiper-slide">
-            <div class="card card-3d">
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-4">
-                  <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="rounded-circle me-3" width="60" height="60">
-                  <div>
-                    <h5 class="mb-0">林小姐</h5>
-                    <div class="text-warning">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                  </div>
+              <div class="d-flex align-items-start mb-4">
+                <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
+                <div>
+                  <h5>Địa Chỉ</h5>
+                  <p class="mb-0">123 Đường ABC, Quận 1, TP.HCM</p>
                 </div>
-                <p class="mb-0">"繁體中文大師的AI助教功能徹底改變了我的學習方式。我可以在任何時間練習對話，並獲得即時反饋。三個月內我的HSK成績從3級提升到了5級！"</p>
               </div>
-            </div>
-          </div>
-          
-          <!-- 評價2 -->
-          <div class="swiper-slide">
-            <div class="card card-3d">
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-4">
-                  <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User" class="rounded-circle me-3" width="60" height="60">
-                  <div>
-                    <h5 class="mb-0">王先生</h5>
-                    <div class="text-warning">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                  </div>
+              
+              <div class="d-flex align-items-start mb-4">
+                <i class="fas fa-phone-alt text-primary mt-1 me-3"></i>
+                <div>
+                  <h5>Điện Thoại</h5>
+                  <p class="mb-0">+84 123 456 789</p>
                 </div>
-                <p class="mb-0">"作為一名商務人士，我沒有太多時間上課。這個平台的個性化學習計劃讓我能夠高效利用碎片時間學習。現在我能自信地用中文進行商務談判了。"</p>
               </div>
-            </div>
-          </div>
-          
-          <!-- 評價3 -->
-          <div class="swiper-slide">
-            <div class="card card-3d">
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-4">
-                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="rounded-circle me-3" width="60" height="60">
-                  <div>
-                    <h5 class="mb-0">張小姐</h5>
-                    <div class="text-warning">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                    </div>
-                  </div>
+              
+              <div class="d-flex align-items-start mb-4">
+                <i class="fas fa-envelope text-primary mt-1 me-3"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p class="mb-0">support@tocfl.vn</p>
                 </div>
-                <p class="mb-0">"聽力訓練部分特別有用，尤其是可以選擇不同口音的功能。我準備去台灣留學，現在已經能聽懂當地人的日常對話了。"</p>
+              </div>
+              
+              <div class="d-flex align-items-start">
+                <i class="fas fa-clock text-primary mt-1 me-3"></i>
+                <div>
+                  <h5>Giờ Làm Việc</h5>
+                  <p class="mb-0">Thứ 2 - Thứ 6: 8:00 - 17:00</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- 分頁器 -->
-        <div class="swiper-pagination"></div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="mb-4">Gửi Tin Nhắn</h4>
+              
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Họ Tên</label>
+                  <input type="text" class="form-control" id="name" placeholder="Nhập họ tên của bạn">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Chủ Đề</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Nhập chủ đề">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="message" class="form-label">Nội Dung</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Nhập nội dung tin nhắn"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 增強型頁腳 -->
+  <!-- Footer -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-main">
-        <div class="footer-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
           <div class="footer-logo">
             <i class="fas fa-language"></i>
-            <span>繁體中文大師</span>
+            <span>TOCFL Việt Nam</span>
           </div>
-          <p>最先進的中文學習平台，結合AI技術與語言學研究成果，幫助您高效掌握繁體中文。</p>
+          <p>Hệ thống luyện thi TOCFL hiệu quả nhất cho người Việt, kết hợp công nghệ AI và phương pháp học thông minh.</p>
           
           <div class="footer-social">
             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-zalo"></i></a>
           </div>
         </div>
         
-        <div class="footer-links">
-          <div class="links-column">
-            <h4>學習資源</h4>
-            <ul>
-              <li><a href="#">聽力訓練</a></li>
-              <li><a href="#">閱讀練習</a></li>
-              <li><a href="#">詞彙學習</a></li>
-              <li><a href="#">文法解析</a></li>
-              <li><a href="#">HSK備考</a></li>
-            </ul>
-          </div>
-          
-          <div class="links-column">
-            <h4>關於我們</h4>
-            <ul>
-              <li><a href="#">團隊介紹</a></li>
-              <li><a href="#">教學理念</a></li>
-              <li><a href="#">工作機會</a></li>
-              <li><a href="#">合作夥伴</a></li>
-              <li><a href="#">媒體報導</a></li>
-            </ul>
-          </div>
-          
-          <div class="links-column">
-            <h4>幫助中心</h4>
-            <ul>
-              <li><a href="#">常見問題</a></li>
-              <li><a href="#">使用指南</a></li>
-              <li><a href="#">系統需求</a></li>
-              <li><a href="#">聯絡客服</a></li>
-              <li><a href="#">意見回饋</a></li>
-            </ul>
-          </div>
+        <div class="col-md-2 mb-4">
+          <h4>Liên Kết</h4>
+          <ul>
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#features">Tính Năng</a></li>
+            <li><a href="#tocfl">TOCFL</a></li>
+            <li><a href="#practice">Bài Tập</a></li>
+            <li><a href="#pricing">Gói Học</a></li>
+          </ul>
         </div>
         
-        <div class="footer-newsletter">
-          <h4>訂閱電子報</h4>
-          <p>獲取最新學習資源和優惠資訊</p>
+        <div class="col-md-2 mb-4">
+          <h4>Tài Nguyên</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tài Liệu</a></li>
+            <li><a href="#">Đề Thi Mẫu</a></li>
+            <li><a href="#">Từ Điển</a></li>
+            <li><a href="#">Hỏi Đáp</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <h4>Đăng Ký Nhận Tin</h4>
+          <p>Nhận thông tin khóa học mới và tài liệu miễn phí.</p>
           
-          <form class="newsletter-form">
-            <input type="email" placeholder="您的電子郵件" required>
+          <form class="d-flex">
+            <input type="email" class="form-control me-2" placeholder="Nhập email của bạn">
             <button type="submit" class="btn btn-primary">
               <i class="fas fa-paper-plane"></i>
             </button>
           </form>
           
-          <div class="app-download">
-            <p>下載手機應用</p>
-            <div class="app-buttons">
-              <a href="#" class="app-btn">
-                <i class="fab fa-apple"></i>
-                <span>App Store</span>
+          <div class="mt-3">
+            <h5>Tải Ứng Dụng</h5>
+            <div class="d-flex">
+              <a href="#" class="btn btn-outline btn-sm me-2">
+                <i class="fab fa-apple"></i> App Store
               </a>
-              <a href="#" class="app-btn">
-                <i class="fab fa-google-play"></i>
-                <span>Google Play</span>
+              <a href="#" class="btn btn-outline btn-sm">
+                <i class="fab fa-google-play"></i> Google Play
               </a>
             </div>
           </div>
@@ -3693,567 +1458,120 @@
       
       <div class="footer-bottom">
         <div class="footer-copyright">
-          <p>&copy; 2023 繁體中文大師. 保留所有權利。</p>
+          <p>&copy; 2023 TOCFL Việt Nam. Bảo lưu mọi quyền.</p>
         </div>
         
-        <div class="footer-legal">
-          <a href="#">服務條款</a>
-          <a href="#">隱私政策</a>
-          <a href="#">Cookie政策</a>
+        <div class="d-flex">
+          <a href="#" class="me-3">Điều Khoản</a>
+          <a href="#">Chính Sách Bảo Mật</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- 返回頂部按鈕 -->
+  <!-- Back to Top -->
   <div class="back-to-top">
     <i class="fas fa-arrow-up"></i>
   </div>
 
-  <!-- 全局加載指示器 -->
-  <div class="global-loader">
-    <div class="loader-content">
-      <div class="loader-spinner"></div>
-      <p>載入中...</p>
-    </div>
-  </div>
-
-  <!-- JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <!-- Scripts -->
   <script>
-    // 初始化粒子背景
-    particlesJS('particles-js', {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#4CAF50" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5, random: true },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: "#8BC34A", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" }
-        }
+    // Mobile Menu Toggle
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      document.querySelector('.nav-menu').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+
+    // Navbar Scroll Effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
       }
     });
 
-    // 初始化3D地球
-    function initGlobe() {
-      const container = document.getElementById('globe');
-      if (!container) return;
-      
-      const width = container.clientWidth;
-      const height = container.clientHeight;
-      
-      // 創建場景
-      const scene = new THREE.Scene();
-      scene.background = null;
-      
-      // 創建相機
-      const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-      camera.position.z = 10;
-      
-      // 創建渲染器
-      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-      renderer.setSize(width, height);
-      container.appendChild(renderer.domElement);
-      
-      // 添加環境光
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-      scene.add(ambientLight);
-      
-      // 添加方向光
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-      directionalLight.position.set(1, 1, 1);
-      scene.add(directionalLight);
-      
-      // 創建地球
-      const geometry = new THREE.SphereGeometry(5, 32, 32);
-      const textureLoader = new THREE.TextureLoader();
-      const texture = textureLoader.load('https://unpkg.com/three-globe@2.28.0/example/img/earth-blue-marble.jpg');
-      const material = new THREE.MeshPhongMaterial({ 
-        map: texture,
-        specular: new THREE.Color(0x333333),
-        shininess: 15
-      });
-      const earth = new THREE.Mesh(geometry, material);
-      scene.add(earth);
-      
-      // 添加光環
-      const ringGeometry = new THREE.RingGeometry(5.2, 5.5, 32);
-      const ringMaterial = new THREE.MeshBasicMaterial({ 
-        color: 0x4CAF50, 
-        side: THREE.DoubleSide,
-        transparent: true,
-        opacity: 0.3
-      });
-      const ring = new THREE.Mesh(ringGeometry, ringMaterial);
-      ring.rotation.x = Math.PI / 2;
-      scene.add(ring);
-      
-      // 添加標記點
-      const markers = [
-        { lat: 25.0330, lng: 121.5654, size: 0.5, color: 0xff0000 }, // 台北
-        { lat: 22.3193, lng: 114.1694, size: 0.5, color: 0xff0000 }, // 香港
-        { lat: 24.1477, lng: 120.6736, size: 0.5, color: 0xff0000 }, // 台中
-        { lat: 22.6333, lng: 120.2666, size: 0.5, color: 0xff0000 }  // 高雄
-      ];
-      
-      markers.forEach(marker => {
-        const phi = (90 - marker.lat) * (Math.PI / 180);
-        const theta = (marker.lng + 180) * (Math.PI / 180);
-        
-        const x = -5.2 * Math.sin(phi) * Math.cos(theta);
-        const y = 5.2 * Math.cos(phi);
-        const z = 5.2 * Math.sin(phi) * Math.sin(theta);
-        
-        const markerGeometry = new THREE.SphereGeometry(marker.size, 16, 16);
-        const markerMaterial = new THREE.MeshBasicMaterial({ color: marker.color });
-        const markerMesh = new THREE.Mesh(markerGeometry, markerMaterial);
-        
-        markerMesh.position.set(x, y, z);
-        scene.add(markerMesh);
-        
-        // 添加脈動動畫
-        gsap.to(markerMesh.scale, {
-          x: 1.5,
-          y: 1.5,
-          z: 1.5,
-          duration: 1,
-          repeat: -1,
-          yoyo: true,
-          ease: "sine.inOut"
-        });
-      });
-      
-      // 動畫循環
-      function animate() {
-        requestAnimationFrame(animate);
-        earth.rotation.y += 0.002;
-        ring.rotation.z += 0.001;
-        renderer.render(scene, camera);
+    // Back to Top Button
+    window.addEventListener('scroll', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
       }
-      
-      animate();
-      
-      // 響應式調整
-      window.addEventListener('resize', () => {
-        const width = container.clientWidth;
-        const height = container.clientHeight;
-        
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-        renderer.setSize(width, height);
-      });
-    }
+    });
 
-    // 初始化評價輪播
-    function initTestimonialsSlider() {
-      const swiper = new Swiper('.testimonials-slider', {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30
-          },
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 40
-          }
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Smooth Scrolling for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
         }
       });
-    }
+    });
 
-    // 初始化圖表
-    function initCharts() {
-      // 學習進度圖表
-      const progressCtx = document.createElement('canvas');
-      progressCtx.style.width = '100%';
-      progressCtx.style.height = '100%';
+    // Animate Progress Circles
+    document.addEventListener('DOMContentLoaded', function() {
+      const progressCircles = document.querySelectorAll('.progress-fill');
       
-      // 添加進度圓環動畫
-      document.querySelectorAll('.progress-circle').forEach(circle => {
-        const progress = circle.getAttribute('data-progress');
-        const fill = circle.querySelector('.progress-fill');
-        const text = circle.querySelector('.progress-text');
-        
-        const radius = fill.r.baseVal.value;
-        const circumference = radius * 2 * Math.PI;
-        
-        fill.style.strokeDasharray = `${circumference} ${circumference}`;
-        fill.style.strokeDashoffset = circumference;
-        
+      progressCircles.forEach(circle => {
+        const progress = parseInt(circle.parentElement.parentElement.querySelector('.progress-text').textContent);
+        const radius = circle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
         const offset = circumference - (progress / 100) * circumference;
         
-        // 動畫效果
-        gsap.to(fill, {
-          strokeDashoffset: offset,
-          duration: 1.5,
-          ease: "power2.out"
-        });
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        circle.style.strokeDashoffset = circumference;
         
-        // 數字計數效果
-        let current = 0;
-        const target = parseInt(progress);
-        const increment = target / 50;
-        
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            current = target;
-            clearInterval(timer);
-          }
-          text.textContent = `${Math.round(current)}%`;
-        }, 20);
-      });
-    }
-
-    // 導航欄滾動效果
-    function initNavbarScroll() {
-      const navbar = document.querySelector('.nav-enhanced');
-      if (!navbar) return;
-      
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
-    }
-
-    // 返回頂部按鈕
-    function initBackToTop() {
-      const backToTop = document.querySelector('.back-to-top');
-      if (!backToTop) return;
-      
-      window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-          backToTop.classList.add('show');
-        } else {
-          backToTop.classList.remove('show');
-        }
-      });
-      
-      backToTop.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-    }
-
-    // 導航菜單切換
-    function initMobileMenu() {
-      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-      const nav = document.querySelector('nav');
-      if (!mobileMenuBtn || !nav) return;
-      
-      mobileMenuBtn.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
-      });
-      
-      // 點擊導航鏈接後關閉菜單
-      document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', () => {
-          nav.classList.remove('active');
-          mobileMenuBtn.classList.remove('active');
-        });
-      });
-    }
-
-    // 平滑滾動導航
-    function initSmoothScroll() {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    }
-
-    // 價格標籤切換
-    function initPricingTabs() {
-      const pricingTabs = document.querySelectorAll('.pricing-tab');
-      if (!pricingTabs.length) return;
-      
-      pricingTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          pricingTabs.forEach(t => t.classList.remove('active'));
-          tab.classList.add('active');
-          
-          // 這裡可以添加切換價格內容的邏輯
-        });
-      });
-    }
-
-    // 模擬全局加載
-    function initLoader() {
-      const globalLoader = document.querySelector('.global-loader');
-      if (!globalLoader) return;
-      
-      setTimeout(() => {
-        globalLoader.style.opacity = '0';
         setTimeout(() => {
-          globalLoader.style.display = 'none';
-        }, 500);
-      }, 1500);
-    }
-
-    // 3D卡片效果
-    function init3DCards() {
-      document.querySelectorAll('.card-3d').forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          const centerX = rect.width / 2;
-          const centerY = rect.height / 2;
-          const angleX = (y - centerY) / 20;
-          const angleY = (centerX - x) / 20;
-          
-          card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
-        });
-        
-        card.addEventListener('mouseenter', () => {
-          card.style.transition = 'transform 0.1s ease';
-        });
-        
-        card.addEventListener('mouseleave', () => {
-          card.style.transition = 'transform 0.5s ease';
-          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
-        });
-      });
-    }
-
-    // 音頻播放器功能
-    class AudioPlayer {
-      constructor(container) {
-        this.container = container;
-        this.audio = new Audio();
-        this.isPlaying = false;
-        this.duration = 0;
-        
-        this.playBtn = container.querySelector('.play-btn');
-        this.progressBar = container.querySelector('.progress-bar');
-        this.progress = container.querySelector('.progress');
-        this.timeDisplay = container.querySelector('.time-display');
-        
-        this.init();
-      }
-      
-      init() {
-        // 模擬音頻文件
-        this.audio.src = 'https://example.com/audio.mp3';
-        
-        // 獲取音頻時長
-        this.audio.addEventListener('loadedmetadata', () => {
-          this.duration = this.audio.duration;
-          this.updateTimeDisplay(0, this.duration);
-        });
-        
-        // 播放/暫停按鈕
-        this.playBtn.addEventListener('click', () => {
-          if (this.isPlaying) {
-            this.pause();
-          } else {
-            this.play();
-          }
-        });
-        
-        // 進度條控制
-        this.progressBar.addEventListener('click', (e) => {
-          const percent = e.offsetX / this.progressBar.clientWidth;
-          this.audio.currentTime = percent * this.duration;
-          this.updateProgress(percent * 100);
-        });
-        
-        // 更新進度條
-        this.audio.addEventListener('timeupdate', () => {
-          const percent = (this.audio.currentTime / this.duration) * 100;
-          this.updateProgress(percent);
-          this.updateTimeDisplay(this.audio.currentTime, this.duration);
-        });
-        
-        // 音頻結束
-        this.audio.addEventListener('ended', () => {
-          this.reset();
-        });
-      }
-      
-      play() {
-        this.audio.play();
-        this.isPlaying = true;
-        this.playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-      }
-      
-      pause() {
-        this.audio.pause();
-        this.isPlaying = false;
-        this.playBtn.innerHTML = '<i class="fas fa-play"></i>';
-      }
-      
-      reset() {
-        this.pause();
-        this.audio.currentTime = 0;
-        this.updateProgress(0);
-        this.updateTimeDisplay(0, this.duration);
-      }
-      
-      updateProgress(percent) {
-        this.progress.style.width = `${percent}%`;
-      }
-      
-      updateTimeDisplay(current, duration) {
-        const currentMinutes = Math.floor(current / 60);
-        const currentSeconds = Math.floor(current % 60);
-        const durationMinutes = Math.floor(duration / 60);
-        const durationSeconds = Math.floor(duration % 60);
-        
-        this.timeDisplay.textContent = 
-          `${currentMinutes}:${currentSeconds < 10 ? '0' : ''}${currentSeconds} / 
-           ${durationMinutes}:${durationSeconds < 10 ? '0' : ''}${durationSeconds}`;
-      }
-    }
-
-    // 初始化所有音頻播放器
-    function initAudioPlayers() {
-      document.querySelectorAll('.audio-player').forEach(player => {
-        new AudioPlayer(player);
-      });
-    }
-
-    // 表單驗證
-    function initFormValidation() {
-      // 註冊表單驗證
-      const registerForm = document.getElementById('registerForm');
-      if (registerForm) {
-        registerForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          
-          // 簡單驗證示例
-          const email = this.querySelector('input[type="email"]').value;
-          const password = this.querySelector('input[type="password"]').value;
-          
-          if (!email || !password) {
-            alert('請填寫所有必填字段');
-            return;
-          }
-          
-          // 提交表單
-          this.submit();
-        });
-      }
-      
-      // 登入表單驗證
-      const loginForm = document.getElementById('loginForm');
-      if (loginForm) {
-        loginForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          
-          // 簡單驗證示例
-          const email = this.querySelector('input[type="email"]').value;
-          const password = this.querySelector('input[type="password"]').value;
-          
-          if (!email || !password) {
-            alert('請填寫所有必填字段');
-            return;
-          }
-          
-          // 提交表單
-          this.submit();
-        });
-      }
-    }
-
-    // 頁面動畫
-    function initAnimations() {
-      // 滾動觸發動畫
-      const animateElements = document.querySelectorAll('.animate-on-scroll');
-      
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animated');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.1
-      });
-      
-      animateElements.forEach(el => {
-        observer.observe(el);
-      });
-    }
-
-    // 頁面載入完成後初始化所有功能
-    document.addEventListener('DOMContentLoaded', () => {
-      initGlobe();
-      initTestimonialsSlider();
-      initCharts();
-      initNavbarScroll();
-      initBackToTop();
-      initMobileMenu();
-      initSmoothScroll();
-      initPricingTabs();
-      initLoader();
-      init3DCards();
-      initAudioPlayers();
-      initFormValidation();
-      initAnimations();
-      
-      // 代碼高亮
-      document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightElement(block);
+          circle.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
+          circle.style.strokeDashoffset = offset;
+        }, 100);
       });
     });
 
-    // 註冊服務工作者 (PWA支持)
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(registration => {
-          console.log('ServiceWorker 註冊成功: ', registration.scope);
-        }).catch(err => {
-          console.log('ServiceWorker 註冊失敗: ', err);
+    // Form Validation
+    document.querySelectorAll('form').forEach(form => {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const inputs = this.querySelectorAll('input[required], textarea[required]');
+        let isValid = true;
+        
+        inputs.forEach(input => {
+          if (!input.value.trim()) {
+            isValid = false;
+            input.classList.add('is-invalid');
+          } else {
+            input.classList.remove('is-invalid');
+          }
         });
+        
+        if (isValid) {
+          // Form is valid, submit it
+          alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ với bạn sớm nhất.');
+          this.reset();
+        }
       });
-    }
+    });
   </script>
 </body>
 </html>
